@@ -4,6 +4,8 @@ $footer-nav-color: $grey;
 
 .site-nav {
   &--footer {
+    position: relative;
+    top: 0;
     background-color: rgba($footer-nav-color,.8);
     &:before { background-image: url("../img/icons/nav-arrow-footer.svg"); }
   }

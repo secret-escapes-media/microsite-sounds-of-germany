@@ -2,36 +2,42 @@
 layout: page
 ---
 
-<div class="container container--xxl vpad--xxl text--center">
-  {{page.intro}}
+<div class="theme--dark bg--black vpad--xxl">
+  <div class="container container--xxl text--center">
+    <div class="p--xl">{{page.intro}}</div>
+  </div>
 </div>
 
-<div class="bg--grey-lightest vpad--xxl">
+<div class="vpad--xxl">
   <div class="container">
     <div class="text--center">
       <div class="h h--md">Video POIS</div>
       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <div class="space--lg"></div>
     </div>
-    <div class="row">
-      {% for poi in page.video-pois %}
-        <div class="col col--4">
-          <div class="poi rounded--md bg--white">
-            <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
-            <div class="boxpad--sm">
-              <div class="h h--xs">{{poi.title}}</div>
-              <p>{{poi.content}}</p>
-            </div>
-          </div>
+
+    {% for poi in page.video-pois %}
+      <div class="bob{% cycle '',' bob--swap' %}">
+
+        <div class="bob__img">
+          <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
         </div>
-      {% endfor %}
-    </div>
+
+        <div class="bob__text">
+          <div class="h h--xs">{{poi.title}}</div>
+          <p>{{poi.content}}</p>
+        </div>
+
+      </div>
+    {% endfor %}
   </div>
 </div>
 
-<div class="vpad--xxxxl bg--img" style="background-image: url({{site.img}}/img.jpg);"></div>
+<div class="vpad--xxxxl bg--img-fixed" style="background-image: url({{site.img}}/{{page.id}}/banner-mid-page.jpg);">
+  <div class="space--xxxxl"></div>
+</div>
 
-<div class="bg--grey-lightest vpad--xxl">
+<div class="vpad--xxl">
   <div class="container">
     <div class="text--center">
       <div class="h h--md">Other POIS</div>
@@ -41,17 +47,35 @@ layout: page
     <div class="row">
       {% for poi in page.pois %}
         <div class="col col--4">
-          <div class="poi rounded--md bg--white">
+          <div class="poi">
             <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
-            <div class="boxpad--sm">
-              <div class="h h--xs">{{poi.title}}</div>
-              <p>{{poi.content}}</p>
-            </div>
+            <div class="space--md"></div>
+            <div class="h h--xxs">{{poi.title}}</div>
+            <p>{{poi.content}}</p>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
 </div>
+
+{% assign offers = site.data.offers | where: 'page', page.id %}
+{% if offers.size > 0 %}
+<div class="bg--grey-lightest vpad--xxl">
+  <div class="container">
+    <div class="text--center">
+      <div class="h h--md">Offers</div>
+      <div class="space--lg"></div>
+    </div>
+    <div class="row">
+      {% for offer in offers %}
+        <div class="col col--6">
+          {% include offer/offer.html %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
 
 {% include page/promo-competition.html %}

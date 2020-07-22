@@ -1,5 +1,11 @@
 // general modifier styles for text
 
+p {
+  max-width: $xl;
+  .text--center &,
+  &.text--center { margin-left: auto; margin-right: auto; }
+}
+
 .p {
   // sizes
   &--xxxxl { font-size: 1.4rem; letter-spacing: 0; }

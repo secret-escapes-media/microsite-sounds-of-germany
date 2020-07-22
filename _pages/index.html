@@ -3,19 +3,29 @@ layout: page
 id: overview
 nav: true
 nav-order: 1
-nav-title: Overview
-title: The Sounds of Germany
+title: Overview
+
+banner:
+  video-url: http://m-stg.secretescapes.com/uk/2019/lexus-design-collection/uk/_assets/video/video.mp4
+  content: >
+    <div class="container text--center">
+      <div class="h h--xxxl">Sounds of Germany</div>
+      <p class="p--xxl">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat.</p>
+      <div class="space--sm"></div>
+      <a href="javascript:void(0);" class="btn js-open-modal" data-open-modal="video">Watch video</a>
+    </div>
+
 intro: >
   <p>Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
   <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
 ---
 
-
+<!--
 <div class="container container--xxl vpad--xxl text--center">
   {{page.intro}}
-</div>
+</div> -->
 
-<div class="bg--grey-lightest vpad--xxl">
+<div class="vpad--xxl">
   <div class="container">
     {% assign citypages = site.html_pages | where: 'layout', 'city' %}
     {% for citypage in citypages %}
@@ -33,6 +43,19 @@ intro: >
       </div>
     </div>
     {% endfor %}
+
+    <div class="space--xxl"></div>
+    <!-- Germany page -->
+    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/germany/banner.jpg);">
+      <a href="{{site.baseurl}}/germany" class="img__link"></a>
+      <div class="img__content">
+        <div class="boxpad--md">
+          <div class="h h--xl">Explore wider Germany</div>
+          <p class="p--xl">Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat et.</p>
+        </div>
+      </div>
+      <div class="img__overlay"></div>
+    </div>
   </div>
 </div>
 

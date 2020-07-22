@@ -2,6 +2,7 @@
 
 .banner {
   position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,9 +13,12 @@
   color: $white;
   background-color: $grey;
   @include bp($lg){
-    height: 90%;
+    height: 80%;
     min-height: 650px;
     max-height: none;
+    &--video {
+      height: 100%;
+    }
   }
   &__wrap {
     position: relative;
@@ -36,27 +40,73 @@
     z-index: $z-content;
     background-color: $grey-dark;
     @include background-attributes;
-    // &:before {
-    //   // optional colour overlay on bg image
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   background-color: rgba($black,.15);
-    // }
   }
-  &__nav {
-    // optional container for navigation include
+  &__bg-video {
     position: absolute;
-    right: 0;
+    top: 0;
     left: 0;
-    bottom: 0;
-    z-index: $z-nav;
-    &--top {
+    z-index: 0;
+    width: 100%;
+    min-height: 100%;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+    & video {
+      position: absolute;
       top: 0;
-      bottom: auto;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 100%;
+    }
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+      background-color: rgba(26,32,43,.4);
+    }
+  }
+  &__jump-down {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    z-index: 5;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icons/arrow-down.svg");
+    background-position: 50% 52.5%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid $white;
+    -webkit-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    transform: translateX(-25px);
+    transition: all .25s ease;
+    &:hover {
+      border-color: transparent;
+      background-color: rgba($white,.4);
+    }
+  }
+  &__play-illust {
+    background-image: url('../img/overview/play-illust.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 100%;
     }
   }
 }

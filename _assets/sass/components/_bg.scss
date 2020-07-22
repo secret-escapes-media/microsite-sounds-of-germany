@@ -39,14 +39,8 @@
   &--error-dark         { background-color: $error-dark; }
 
   &--img   { @include background-attributes; }
-  &__fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $z-background;
+  &--img-fixed   {
     @include background-attributes;
-    background-color: $grey-darker;
+    background-attachment: fixed;
   }
 }

@@ -1,0 +1,98 @@
+---
+layout: page
+id: germany
+title: Germany
+nav: true
+nav-order: 6
+intro: >
+  <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. </p>
+
+
+sections:
+
+  - title: Extraordinary heights
+    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+    pois:
+      - id: poi1
+        title: POI Title
+      - id: poi2
+        title: POI Title
+      - id: poi3
+        title: POI Title
+      - id: poi4
+        title: POI Title
+
+  - title: Soulful cities
+    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+    pois:
+      - id: poi1
+        title: POI Title
+      - id: poi2
+        title: POI Title
+      - id: poi3
+        title: POI Title
+      - id: poi4
+        title: POI Title
+
+  - title: Crashing waves and calming lakes
+    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+    pois:
+      - id: poi1
+        title: POI Title
+      - id: poi2
+        title: POI Title
+      - id: poi3
+        title: POI Title
+      - id: poi4
+        title: POI Title
+
+  - title: Powerful nature
+    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+    pois:
+      - id: poi1
+        title: POI Title
+      - id: poi2
+        title: POI Title
+      - id: poi3
+        title: POI Title
+      - id: poi4
+        title: POI Title
+
+
+---
+
+
+
+<div class="container container--xxl vpad--xxl text--center">
+  {{page.intro}}
+</div>
+
+<div class="bg--grey-lightest vpad--xxl">
+  {% for section in page.sections %}
+  <div class="container">
+    <div class="text--center">
+      <div class="h h--lg">{{section.title}}</div>
+      <p class="p--lg">{{section.content}}</p>
+      <div class="space--lg"></div>
+    </div>
+    <div class="row row--gutters-sm">
+      {% for poi in section.pois %}
+        <div class="col col--3">
+          <div class="poi rounded--md bg--white">
+            <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
+            <div class="boxpad--sm">
+              <div class="h h--xxxs">{{poi.title}}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+
+{% include page/promo-competition.html %}
+
+
+

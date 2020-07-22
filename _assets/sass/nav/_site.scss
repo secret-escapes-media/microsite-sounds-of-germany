@@ -1,5 +1,7 @@
 // styles for the microsite nav
 
+$core-nav-height:     80px;
+$core-nav-height-sm:  60px;
 $site-nav-height:    56px;
 $site-nav-height-sm: 44px;
 $nav-width-bp:       640px;
@@ -17,17 +19,21 @@ $nav-color:          $black;
 }
 
 .site-nav {
-  position: relative;
+  position: absolute;
+  top: $core-nav-height-sm; left: 0; right: 0;
+  z-index: $z-overlay-upper;
   background-color: rgba($nav-color,.8);
   text-align: center;
-
-  // NEEDS EXPLAINING LIKE THE CORE NAV OFFSET
+  @include bp($md){
+    top: $core-nav-height;
+  }
   &__offset:before {
     // corrects header overlapping content
     content: '';
     display: block;
     @include site-nav-height;
   }
+
 
 
   &:before {
