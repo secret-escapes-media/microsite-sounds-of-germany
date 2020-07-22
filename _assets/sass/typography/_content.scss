@@ -38,12 +38,12 @@ hr, .hr {
 // theme
 .theme {
   &--light {
-    color: $white;
-    & .h, &.h { color: $white; }
-  }
-  &--dark {
     color: $grey-dark;
     & .h, &.h { color: $grey-darker; }
+  }
+  &--dark {
+    color: $white;
+    & .h, &.h { color: $white; }
   }
 }
 

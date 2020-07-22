@@ -17,7 +17,7 @@ $(document).ready(function(){
       );
 
       $(this).countdown(expires, function(event) {
-        if (event.elapsed) {
+        if (event.elapsed || event.offset.totalDays > 14 ) {
           // the expired date is in the past so the expired message is removed
           $(this).remove();
         } else if (event.offset.totalDays === 0) {
