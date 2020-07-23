@@ -2,6 +2,10 @@ var modal          = $('.js-modal'),
     modalLaunchBtn = $('.js-open-modal'),
     modalCloseBtn  = $('.js-close-modal');
 
+$('.js-modal-splashscreen').click(function(){
+  $(this).fadeOut();
+});
+
 // opens modal
 function modalOpen(event, modalId){
 
@@ -27,7 +31,7 @@ function modalOpen(event, modalId){
     var video     = activeModal.find('.js-modal-video'),
         youtubeId = activeModal.data('youtube-id');
     // insert the code into the target with the id and autoplay
-    video.html('<div class="video__wrap"><iframe class="video" src="https://www.youtube.com/embed/' + youtubeId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>');
+    video.html('<div class="video__wrap"><iframe class="video" src="https://www.youtube.com/embed/' + youtubeId + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>');
   }
 
   // reveal the specific modal content

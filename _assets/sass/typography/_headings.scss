@@ -5,6 +5,7 @@
   font-family: $serif;
   font-weight: 700;
   line-height: 1.1;
+  &--display { font-family: $display; font-weight: 400;}
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
   &--xl     { font-size: $s6; }
@@ -43,10 +44,10 @@
 
 .h--banner {
   // custom banner headline
-  font-family: $serif;
+  font-family: $display;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 400;
   font-size: $s5;
   @include bp($md){ font-size: $s7; }
-  @include bp($xl){ font-size: $s10; }
+  @include bp($xl){ font-size: $s9; }
 }

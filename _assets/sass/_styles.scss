@@ -1,1 +1,62 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.title {
+  position: relative;
+  display: block;
+  background-image: url('../img/title.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 11.88%;
+  }
+}
+
+.sennheiser-logo {
+  width: 80%;
+  max-width: 300px;
+  margin: auto;
+  position: relative;
+  display: block;
+  background-image: url('../img/logo/sennheiser-wh.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 11.88%;
+  }
+}
+
+.infobox {
+  border: 1px solid rgba($black,0.2);
+  border-radius: 3px;
+  padding: $s2;
+  position: relative;
+  &:before {
+    content: 'i';
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: -12px; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid rgba($black,0.2);
+    z-index: 1;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  &__logo {
+    width: 170px;
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}

@@ -8,11 +8,11 @@ p {
 
 .p {
   // sizes
-  &--xxxxl { font-size: 1.4rem; letter-spacing: 0; }
-  &--xxxl { font-size: 1.3rem; letter-spacing: 0; }
-  &--xxl { font-size: 1.2rem; letter-spacing: 0; }
-  &--xl  { font-size: 1.1rem; letter-spacing: 0; }
-  &--lg  { font-size: 1.05rem; letter-spacing: 0; }
+  &--xxxxl { font-size: 1.4rem; }
+  &--xxxl { font-size: 1.3rem; }
+  &--xxl { font-size: 1.2rem; }
+  &--xl  { font-size: 1.1rem; }
+  &--lg  { font-size: 1.05rem; }
   &--sm  { font-size: .9rem; }
   &--xs  { font-size: .8rem; }
 }

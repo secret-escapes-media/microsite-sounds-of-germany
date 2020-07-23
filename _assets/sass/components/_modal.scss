@@ -35,6 +35,16 @@
     background-color: $white;
     padding: $s2 $s3;
   }
+  &__video-pre {
+    position: absolute;
+    z-index: 100;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: rgba($black,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &__close {
     position: absolute;
     right: 0;
@@ -96,7 +106,6 @@
   &--image    { max-width: $xxl; }
   &--youtube  {
     width: 100%;
-    max-width: $xxxl;
     .video__wrap {
       position: relative;
       display: flex;

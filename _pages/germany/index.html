@@ -1,62 +1,58 @@
 ---
 layout: page
 id: germany
-title: Germany
+nav-title: Germany
 nav: true
 nav-order: 6
+
+title: Germany in Full Sound
 intro: >
-  <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. </p>
+  <p class="p--xl">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. </p>
 
 
 sections:
 
-  - title: Extraordinary heights
+  - id: heights
+    title: Extraordinary heights
     content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
       - id: poi1
-        title: POI Title
+        title: Zugspitze
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi2
-        title: POI Title
+        title: Hohenzollern Castle
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi3
-        title: POI Title
-      - id: poi4
-        title: POI Title
+        title: Drachenburg Castle
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
-  - title: Soulful cities
+  - id: cities
+    title: Soulful cities
     content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
       - id: poi1
-        title: POI Title
+        title: Hamburg
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi2
-        title: POI Title
+        title: Münster
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi3
-        title: POI Title
-      - id: poi4
-        title: POI Title
+        title: Dresden
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
-  - title: Crashing waves and calming lakes
+  - id: nature
+    title: Pulse of nature
     content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
       - id: poi1
-        title: POI Title
+        title: Lake Constance
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi2
-        title: POI Title
+        title: Partnach Gorge
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi3
-        title: POI Title
-      - id: poi4
-        title: POI Title
-
-  - title: Powerful nature
-    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
-    pois:
-      - id: poi1
-        title: POI Title
-      - id: poi2
-        title: POI Title
-      - id: poi3
-        title: POI Title
-      - id: poi4
-        title: POI Title
+        title: Spree Forest
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
 
 ---
@@ -67,29 +63,30 @@ sections:
   {{page.intro}}
 </div>
 
-<div class="bg--grey-lightest vpad--xxl">
-  {% for section in page.sections %}
+{% for section in page.sections %}
+<div class="bg--white bg--img-fixed vpad--xxxl" style="background-image: url({{site.img}}/{{page.id}}/bg-{{section.id}}.jpg);">
   <div class="container">
     <div class="text--center">
-      <div class="h h--lg">{{section.title}}</div>
-      <p class="p--lg">{{section.content}}</p>
+      <div class="h h--xl">{{section.title}}</div>
+      <p class="p--xl">{{section.content}}</p>
       <div class="space--lg"></div>
     </div>
-    <div class="row row--gutters-sm">
+    <div class="row">
       {% for poi in section.pois %}
-        <div class="col col--3">
+        <div class="col col--4">
           <div class="poi rounded--md bg--white">
             <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
             <div class="boxpad--sm">
-              <div class="h h--xxxs">{{poi.title}}</div>
+              <div class="h h--xxs">{{poi.title}}</div>
+              <p>{{poi.content}}</p>
             </div>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
-{% endfor %}
 </div>
+{% endfor %}
 
 
 {% include page/promo-competition.html %}
