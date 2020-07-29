@@ -28,7 +28,7 @@ layout: page
         </div>
 
         <div class="bob__text">
-          <div class="h h--xs">{{poi.title}}</div>
+          <div class="h h--sm">{{poi.title}}</div>
           <p>{{poi.content}}</p>
         </div>
 
@@ -37,7 +37,7 @@ layout: page
   </div>
 </div>
 
-<div class="vpad--xxxxl bg--img-fixed" style="background-image: url({{site.img}}/{{page.id}}/banner-mid-page.jpg);">
+<div class="vpad--xxxxl bg--img-fixed" style="background-image: url({{site.img}}/pages/{{page.id}}/banner-mid-page.jpg);">
   <div class="space--xxxxl"></div>
 </div>
 
@@ -89,14 +89,14 @@ layout: page
   {% if nextpage.layout == 'city' %}
     <div class="space--xxl"></div>
     <div class="container">
-      <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/{{nextpage.id}}/banner.jpg);">
+      <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{nextpage.id}}/banner.jpg);">
         <a href="{{site.baseurl}}/{{nextpage.url}}" class="img__link"></a>
         <div class="img__content">
           <div class="boxpad--md">
             <div class="p--xxl text--smallcaps">Continue your adventure with</div>
             <div class="space--xxs"></div>
-            <h class="h h--xl">The Sound of {{nextpage.title}}</h>
-            <p class="p--xl">{{nextpage.intro}}</p>
+            <div class="h h--xl">The Sound of {{nextpage.title}}</div>
+            <div class="space--xs"></div>
             <a href="{{site.baseurl}}/{{nextpage.url}}" class="btn">Discover now</a>
           </div>
         </div>

@@ -5,6 +5,10 @@ nav-title: Germany
 nav: true
 nav-order: 6
 
+overview:
+  title: Explore Germany in full sound
+  intro: Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
 title: Germany in Full Sound
 intro: >
   <p class="p--xl">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. </p>
@@ -13,42 +17,56 @@ intro: >
 sections:
 
   - id: heights
-    title: Extraordinary heights
+    title: Altos at high altitudes
     content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
       - id: poi1
         title: Zugspitze
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi2
-        title: Hohenzollern Castle
+        title: Harz Mountains National Park
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi3
         title: Drachenburg Castle
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
   - id: cities
-    title: Soulful cities
+    title: Up the tempo
     content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
       - id: poi1
         title: Hamburg
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi2
-        title: Münster
-        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi3
         title: Dresden
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      - id: poi3
+        title: Frankfurt
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
-  - id: nature
-    title: Pulse of nature
+  - id: water
+    title: The calming cadences of water
     content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
       - id: poi1
         title: Lake Constance
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi2
+        title: Northern Friesland
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      - id: poi3
+        title: Steinhuder Sea
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+
+  - id: nature
+    title: Powerful crescendos of nature
+    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+    pois:
+      - id: poi1
         title: Partnach Gorge
+        content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      - id: poi2
+        title: Saxon Switzerland
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
       - id: poi3
         title: Spree Forest
@@ -64,7 +82,7 @@ sections:
 </div>
 
 {% for section in page.sections %}
-<div class="bg--white bg--img-fixed vpad--xxxl" style="background-image: url({{site.img}}/{{page.id}}/bg-{{section.id}}.jpg);">
+<div class="bg--white bg--img-fixed vpad--xxxl" style="background-image: url({{site.img}}/pages/{{page.id}}/bg-{{section.id}}.jpg);">
   <div class="container">
     <div class="text--center">
       <div class="h h--xl">{{section.title}}</div>

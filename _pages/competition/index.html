@@ -1,5 +1,5 @@
 ---
-layout: competition
+layout: page
 id: competition
 title: Competition
 nav: true
@@ -7,7 +7,14 @@ nav-order: 7
 
 
 
-long-title: Win a trip to Germany
+banner:
+  content: >
+    <div class="container container--no-padding">
+      <div class="width width--xxl text--center">
+        <h1 class="h h--xxxl h--display">Win a trip to Germany</h1>
+      </div>
+    </div>
+
 intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur beatae tempora, voluptates ut recusandae ea exercitationem culpa mollitia quia similique. Perferendis cumque obcaecati ad pariatur. Quos iure sapiente amet beatae, officiis possimus minima expedita, ea ad. Doloribus et perspiciatis doloremque. Tenetur consequatur quam maiores odit, adipisci nostrum numquam quo mollitia eligendi! Debitis, culpa impedit, ex esse fugit enim quibusdam!
 
 enter-cta: Enter Now
@@ -15,12 +22,16 @@ enter-cta: Enter Now
 
 
 prizes:
-  - title: Sennheiser headphones
-    description: Two pairs of Sennheiser headphones
   - title: Luxury stay
-    description: Experience true luxury with a stay at ....
+    description: Experience true luxury with a stay at... Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
   - title: Discover XXX
-    description: Explore the magical city of XXX
+    description: Explore the magical city of XXX. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  - title: Sennheiser headphones
+    description: Two pairs of Sennheiser headphones. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+secondprize:
+  title: Sennheiser soundbar
+  description: Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
 
 
 
@@ -64,3 +75,92 @@ competition-form:
   terms: >
     By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-open-modal="competition-terms">terms and conditions</a> of this competition
 ---
+
+
+<div class="vpad--xxl">
+  <div class="container text--center">
+    <p class="p--xxl">{{page.intro}}</p>
+    <div class="space--md"></div>
+    <a href="#entry-form" class="btn">{{page.enter-cta}}</a>
+  </div>
+</div>
+
+
+
+<div class="container container--xxl">
+
+  {% for prize in page.prizes %}
+  <div class="bob {% cycle '',' bob--swap' %}">
+    <div class="bob__img">
+      <div class="img img--16-9 rounded--md" style="background-image: url({{site.img}}/img.jpg);"></div>
+    </div>
+    <div class="bob__text">
+      <div class="h h--xs">{{prize.title}}</div>
+      <p>{{prize.description}}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% assign secondprize = page.secondprize %}
+  <div class="space--md"></div>
+  <hr class="hr--center">
+  <div class="space--md"></div>
+  <div class="container rounded--md depth--md bg--grey-lightest container--no-padding">
+    <div class="row row--no-gutters row--valign-center">
+      <div class="col col--7">
+        <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
+      </div>
+      <div class="col col--5">
+        <div class="boxpad--sm">
+          <div class="p--xl text--smallcaps">Second prize</div>
+          <div class="space--xxs"></div>
+          <div class="h h--xs">{{secondprize.title}}</div>
+          <p>{{secondprize.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text--center">
+    <div class="space--xl"></div>
+    <a href="#entry-form" class="btn btn--xl">{{page.enter-cta}}</a>
+  </div>
+
+</div>
+<div class="space--xxl"></div>
+
+<div id="entry-form" class="vpad--xxxl bg--img-fixed" style="background-image: url({{site.img}}/pages/competition/banner.jpg);">
+
+  <div class="container container--lg boxpad--xl bg--white rounded--md depth--xl">
+    {% assign form = page.competition-form %}
+    <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
+      {% include form/messages.html %}
+      <div class="form__content">
+        {% for item in form.fields %}
+          <div class="form__input js-form-input">
+            {% case item.type %}
+              {% when 'text' %}
+                {% include form/text.html data=item %}
+              {% when 'text-long' %}
+                {% include form/text-long.html data=item %}
+              {% when 'email' %}
+                {% include form/email.html data=item %}
+              {% when 'radio' %}
+                {% include form/radio.html data=item %}
+              {% when 'checkbox' %}
+                {% include form/checkbox.html data=item %}
+              {% when 'select' %}
+                {% include form/select.html data=item %}
+            {% endcase %}
+          </div>
+        {% endfor %}
+        <div class="space--sm"></div>
+        <p class="text--sm text--normal">{{form.terms}}</p>
+        <div class="space--sm"></div>
+        <button type="submit" class="btn" disabled>{{form.submit}}</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+

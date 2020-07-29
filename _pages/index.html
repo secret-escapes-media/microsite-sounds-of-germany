@@ -36,7 +36,7 @@ intro: >
     {% for citypage in citypages %}
     <div class="bob{% cycle '',' bob--swap' %}">
       <div class="bob__img">
-        <div class="img img--4-3 rounded--md depth--md" style="background-image: url({{site.img}}/{{citypage.id}}/banner.jpg)">
+        <div class="img img--4-3 rounded--md depth--md" style="background-image: url({{site.img}}/pages/{{citypage.id}}/banner.jpg)">
           <a href="{{site.baseurl}}{{citypage.url}}" class="img__link"></a>
         </div>
       </div>
@@ -51,16 +51,21 @@ intro: >
 
     <div class="space--xxl"></div>
     <!-- Germany page -->
-    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/germany/banner.jpg);">
+    {% assign germanypage = site.html_pages | where: 'id', 'germany' %}
+    {% for germanypage in germanypage %}
+    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/germany/banner.jpg);">
       <a href="{{site.baseurl}}/germany" class="img__link"></a>
       <div class="img__content">
         <div class="boxpad--md">
-          <div class="h h--xl">Explore wider Germany</div>
-          <p class="p--xl">Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat et.</p>
+          <div class="h h--xl">{{germanypage.overview.title}}</div>
+          <p class="p--xl">{{germanypage.overview.intro}}</p>
+          <div class="space--md"></div>
+          <a href="{{site.baseurl}}{{germanypage.url}}" class="btn">Discover now</a>
         </div>
       </div>
       <div class="img__overlay"></div>
     </div>
+    {% endfor %}
   </div>
 </div>
 
