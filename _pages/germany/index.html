@@ -18,57 +18,53 @@ sections:
 
   - id: heights
     title: Altos at high altitudes
-    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
-      - id: poi1
+      - id: zugspitze
         title: Zugspitze
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi2
+      - id: harz-mountains-national-park
         title: Harz Mountains National Park
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi3
+      - id: drachenburg-castle
         title: Drachenburg Castle
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
   - id: cities
     title: Up the tempo
-    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
-      - id: poi1
+      - id: hamburg
         title: Hamburg
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi2
+      - id: dresden
         title: Dresden
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi3
+      - id: frankfurt
         title: Frankfurt
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
   - id: water
     title: The calming cadences of water
-    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
-      - id: poi1
+      - id: lake-constance
         title: Lake Constance
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi2
+      - id: northern-friesland
         title: Northern Friesland
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi3
+      - id: steinhuder-sea
         title: Steinhuder Sea
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
   - id: nature
     title: Powerful crescendos of nature
-    content: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
     pois:
-      - id: poi1
+      - id: partnach-gorge
         title: Partnach Gorge
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi2
+      - id: saxon-switzerland
         title: Saxon Switzerland
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      - id: poi3
+      - id: spree-forest
         title: Spree Forest
         content: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
@@ -83,24 +79,27 @@ sections:
 
 {% for section in page.sections %}
 <div class="bg--white bg--img-fixed vpad--xxxl" style="background-image: url({{site.img}}/pages/{{page.id}}/bg-{{section.id}}.jpg);">
-  <div class="container">
-    <div class="text--center">
-      <div class="h h--xl">{{section.title}}</div>
-      <p class="p--xl">{{section.content}}</p>
-      <div class="space--lg"></div>
-    </div>
-    <div class="row">
+  <div class="container container--xxl container--no-padding">
+    <div class="bg--white rounded--md depth--lg">
+
+      <div class="boxpad--lg bg--black theme--dark text--center">
+        <div class="h h--lg h--display">{{section.title}}</div>
+      </div>
+
       {% for poi in section.pois %}
-        <div class="col col--4">
-          <div class="poi rounded--md bg--white">
-            <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
-            <div class="boxpad--sm">
-              <div class="h h--xxs">{{poi.title}}</div>
-              <p>{{poi.content}}</p>
+        <div class="harvey bg--white{% cycle '',' harvey--swap'%}">
+          <div class="harvey__img">
+            <div class="img img--1-1" style="background-image: url({{site.img}}/pages/germany/poi/{{poi.id}}.jpg);"></div>
+          </div>
+          <div class="harvey__text">
+            <div class="boxpad--md">
+              <div class="h h--xs">{{poi.title}}</div>
+              <p class="p--lg">{{poi.content}}</p>
             </div>
           </div>
         </div>
       {% endfor %}
+
     </div>
   </div>
 </div>

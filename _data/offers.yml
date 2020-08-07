@@ -1,4 +1,49 @@
 
+- title: 5* Berlin spa hotel with Michelin-starred dining - Fully refundable
+  location: The Mandala Hotel, Germany
+  description: Five-star Berlin hotel with award-winning dining
+  price: 153
+  price-description: per room per night
+  saved: 42
+  expires: 2021-08-06
+  image: https://secretescapes-web.imgix.net/hotels/858/623ebe63_ba60_4675_8952_4b7889a2c6a5.jpg?auto=format,compress
+  link: https://www.secretescapes.com/5-star-berlin-spa-hotel-with-michelin-starred-dining-fully-refundable-the-mandala-hotel-germany/sale-hotel
+  page: berlin
+
+
+- title: Modern Munich hotel near city centre sights - Fully refundable
+  location: HYPERION Hotel München, Germany
+  description: Sleek and luxurious stay near the centre of Munich
+  price: 89
+  price-description: per room per night
+  saved: 65
+  expires: 2021-08-05
+  image: https://secretescapes-web.imgix.net/hotels/870/6c77945c_41a4_41fa_9b5f_d4ef596d8de7.jpg?auto=format,compress
+  link: https://www.secretescapes.com/modern-munich-hotel-near-city-centre-sights-fully-refundable-hyperion-hotel-muenchen-germany/sale-hotel
+
+
+- title: Explore Berlin's vibrant culture
+  location: Berlin, Germany
+  description: A versatile city trip exploring Berlin with cultural inclusions
+  price: 159
+  price-description: Based on 2 people for 2 nights
+  saved: 0
+  expires: 2029-12-18
+  image: https://secretescapes-web.imgix.net/webRedirects/320/be854d2d_2bab_444b_a1df_fe72e3180d99.jpg?auto=format,compress
+  link: https://www.secretescapes.com/explore-berlins-vibrant-culture-uk/sale-wrd
+  page: berlin
+
+
+- title: Swish hotel stay on the outskirts of Munich - Fully refundable
+  location: the niu Loco, Germany
+  description: Pretty pink-hued hotel near Munich’s heart
+  price: 53
+  price-description: per room per night
+  saved: 50
+  expires: 2021-08-01
+  image: https://secretescapes-web.imgix.net/hotels/839/15539835_566d_4298_b1a8_5124d9a398bd.jpg?auto=format,compress
+  link: https://www.secretescapes.com/swish-hotel-stay-on-the-outskirts-of-munich-fully-refundable-the-niu-loco-germany/sale-hotel
+
 
 - title: Opulent hotel in vibrant Berlin - Fully refundable
   location: The Westin Grand Berlin, Germany
@@ -9,15 +54,4 @@
   expires: 2021-07-13
   image: https://secretescapes-web.imgix.net/hotels/546/a0524f99_92c9_489b_a847_cc3547c9906b.jpg?auto=format,compress
   link: https://www.secretescapes.com/opulent-hotel-in-vibrant-berlin-fully-refundable-the-westin-grand-berlin-germany/sale-hotel
-  page: berlin
-
-- title: Explore Berlin's vibrant culture
-  location: Berlin, Germany
-  description: A versatile city trip exploring Berlin with cultural inclusions
-  price: 149
-  price-description: Based on 2 people for 2 nights
-  saved: 0
-  expires: 2029-12-18
-  image: https://secretescapes-web.imgix.net/webRedirects/320/be854d2d_2bab_444b_a1df_fe72e3180d99.jpg?auto=format,compress
-  link: https://www.secretescapes.com/explore-berlins-vibrant-culture-uk/sale-wrd
   page: berlin

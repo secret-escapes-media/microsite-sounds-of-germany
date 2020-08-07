@@ -48,6 +48,7 @@
   line-height: 1.1;
   font-weight: 400;
   font-size: $s5;
+  text-transform: uppercase;
   @include bp($md){ font-size: $s7; }
   @include bp($xl){ font-size: $s9; }
 }

@@ -24,7 +24,7 @@ layout: page
       <div class="bob{% cycle '',' bob--swap' %}">
 
         <div class="bob__img">
-          <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
+          <div class="img img--3-2" style="background-image: url({{site.img}}/pages/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
         </div>
 
         <div class="bob__text">
@@ -47,17 +47,21 @@ layout: page
       <div class="h h--lg">{{page.title}} & beyond</div>
       <div class="space--lg"></div>
     </div>
-    <div class="row">
-      {% for poi in page.pois %}
-        <div class="col col--4">
-          <div class="poi">
-            <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
-            <div class="space--md"></div>
-            <div class="h h--xxs">{{poi.title}}</div>
-            <p>{{poi.content}}</p>
-          </div>
+
+    {% for poi in page.pois %}
+      <div class="bob{% cycle '',' bob--swap' %}">
+
+        <div class="bob__img">
+          <div class="img img--3-2" style="background-image: url({{site.img}}/pages/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
         </div>
-      {% endfor %}
+
+        <div class="bob__text">
+          <div class="h h--sm">{{poi.title}}</div>
+          <p>{{poi.content}}</p>
+        </div>
+
+      </div>
+    {% endfor %}
     </div>
   </div>
 </div>
