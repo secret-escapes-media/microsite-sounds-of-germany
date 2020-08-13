@@ -31,6 +31,16 @@ $offer-max-width: 560px;
       .touch & { opacity: 0; }
     }
   }
+  &__title {
+    font-size: $s1;
+    font-family: $serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: $s-4;
+    @include bp($lg){
+      font-size: $s2;
+    }
+  }
   &__expires {
     position: absolute;
     z-index: $z-content-upper;
