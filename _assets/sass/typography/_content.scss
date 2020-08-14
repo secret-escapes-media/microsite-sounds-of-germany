@@ -26,7 +26,7 @@ ol li   { list-style-type: decimal; }
 hr, .hr {
   border: 0;
   height: 1px;
-  margin: $s1 0;
+  margin: $s-2 0;
   background-color: rgba($black,0.2);
   &.theme--dark,
   .theme--dark & { background-color: rgba($white,0.2); }
@@ -35,6 +35,7 @@ hr, .hr {
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
   &--left   { width: 80px; margin-right: auto; }
   &--right  { width: 80px; margin-left: auto; }
+  &--no-margin { margin-top: 0; margin-bottom: 0; }
 }
 
 // theme

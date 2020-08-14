@@ -23,14 +23,14 @@ $nav-height-sm:  104px;
     }
   }
   &__title {
-    width: 80%;
+    width: 90%;
     max-width: $xxl;
     margin: auto;
   }
   &__wrap {
     text-shadow: 0 10px 20px rgba($black,0.2);
     position: relative;
-    z-index: $z-content-upper;
+    z-index: 10;
     display: flex;
     width: 100%;
     flex-grow: 1;
@@ -194,22 +194,27 @@ $nav-height-sm:  104px;
 
   // OVERVIEW BANNER
   &--overview {
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     height: auto;
     bottom: 0;
     top: 0;
   }
   &--overview &__center {
-    width: 70%;
-    max-width: $xxl;
-    &:after {
-      content: "";
-      position: absolute;
-      height: 4px;
-      background-color: $white;
-      left: 0; right: 0;
-      top: 50%; margin-top: -2px;
+    width: 100%;
+    padding-left: $s2;
+    padding-right: $s2;
+    @include bp($xxl){
+      width: 60%;
+      max-width: $xxl;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        background-color: $white;
+        left: 0; right: 0;
+        top: 50%; margin-top: -2px;
+      }
     }
   }
 

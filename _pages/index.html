@@ -10,45 +10,50 @@ banner:
   title: Sounds of Germany
   content: >
     <p class="p--xxxl text--bold">Take an adventure around Germany, guided by the sounds of the cities.</p>
-    <div class="space--sm"></div>
-    <a href="javascript:void(0);" class="btn js-open-modal" data-open-modal="video">Watch video</a>
+    <div class="space--md"></div>
+    <a href="javascript:void(0);" class="btn btn--lg js-open-modal" data-open-modal="video">Watch video</a>
 
 intro: >
   <p class="p--xxl">To mark the 250th birthday of one of the greatest musical composers of all-time, Beethoven, we’re celebrating the anniversary by immersing ourselves in the sounds of Germany - a symphony that would have sparked Beethoven’s creativity. Since travel plans have been on hold until now, the anniversary celebrations will continue into 2021, giving you even more reason to travel to Germany.  Discover more about this unique, diverse and welcoming country, its cities, lakes and mountains,  through the sounds that are dispersed throughout the landscape. </p>
 
 ---
 
-
-<div class="container container--xxl vpad--xxl text--center">
-  {{page.intro}}
-</div>
-<div class="width width--xl">
-  <div class="infobox bg--grey-lightest text--center">
-    <p class="p--xxl text--bold">Travel Germany with 3D audio powered by <img src="{{site.img}}/logo/sennheiser-colour.svg" alt="Sennheiser" class="infobox__logo"></p>
-    <p>We've partnered with Sennheiser to create truly immersive audio-visual experience. <a href="javascript:void(0);" class="text--link js-open-modal" data-open-modal="sennheiser">Read more...</a></p>
+<div class="bg--black theme--dark">
+  <div class="container container--xxl vpad--xxl text--center">
+    {{page.intro}}
+    <div class="space--lg"></div>
+    <div class="width width--xl">
+      <div class="infobox bg--grey-darkest text--center">
+        <p class="p--xxl text--bold">Travel Germany with 3D audio powered by <img src="{{site.img}}/logo/sennheiser-colour.svg" alt="Sennheiser" class="infobox__logo"></p>
+        <p>We've partnered with Sennheiser to create truly immersive audio-visual experience. <a href="javascript:void(0);" class="text--link js-open-modal" data-open-modal="sennheiser">Read more...</a></p>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="vpad--xxl">
+  {% assign citypages = site.html_pages | where: 'layout', 'city' %}
   <div class="container">
-    {% assign citypages = site.html_pages | where: 'layout', 'city' %}
-    {% for citypage in citypages %}
-    <div class="bob{% cycle '',' bob--swap' %}">
-      <div class="bob__img">
-        <div class="img img--4-3 rounded--md depth--md" style="background-image: url({{site.img}}/pages/{{citypage.id}}/banner.jpg)">
+    <div class="row">
+      {% for citypage in citypages %}
+      <div class="col col--6">
+        <div class="img img--4-3 rounded--md depth--md depth--md-hover" style="background-image: url({{site.img}}/pages/{{citypage.id}}/banner.jpg)">
           <a href="{{site.baseurl}}{{citypage.url}}" class="img__link"></a>
+          <div class="img__content">
+            <div class="boxpad--sm theme--dark">
+              <h2 class="h h--xl">{{citypage.title}}</h2>
+              <div class="space--sm"></div>
+              <hr class="hr--center hr--no-margin">
+              <p class="text--bold p--xl">{{citypage.overview-intro}}</p>
+            </div>
+          </div>
+          <div class="img__overlay"></div>
         </div>
       </div>
-      <div class="bob__text">
-        <h2 class="h h--lg">{{citypage.title}}</h2>
-        <p class="p--lg">{{citypage.intro}}</p>
-        <div class="space--md"></div>
-        <a href="{{site.baseurl}}{{citypage.url}}" class="btn">Discover {{citypage.title}}</a>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
 
-    <div class="space--xxl"></div>
+    <div class="space--lg"></div>
     <!-- Germany page -->
     {% assign germanypage = site.html_pages | where: 'id', 'germany' %}
     {% for germanypage in germanypage %}
@@ -57,7 +62,7 @@ intro: >
       <div class="img__content">
         <div class="boxpad--md">
           <div class="h h--xl">{{germanypage.overview.title}}</div>
-          <p class="p--xl">{{germanypage.overview.intro}}</p>
+          <p class="text--bold p--xl">{{germanypage.overview.intro}}</p>
           <div class="space--md"></div>
           <a href="{{site.baseurl}}{{germanypage.url}}" class="btn">Discover now</a>
         </div>
