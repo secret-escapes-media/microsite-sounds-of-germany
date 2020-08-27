@@ -20,6 +20,13 @@
 #####################################
 
 
+- id: video
+  type: youtube
+  pages:
+    - id: all
+  youtube-id: wHrDlDaFya4
+
+
 - id: sennheiser
   image: sennheiser.jpg
   pages:
