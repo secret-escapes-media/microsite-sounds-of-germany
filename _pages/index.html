@@ -14,7 +14,7 @@ banner:
     <a href="javascript:void(0);" class="btn btn--lg js-open-modal" data-open-modal="video">Watch video</a>
 
 intro: >
-  <p class="p--xxl">To mark the 250th birthday of one of the greatest musical composers of all-time, Beethoven, we’re celebrating the anniversary by immersing ourselves in the sounds of Germany - a symphony that would have sparked Beethoven’s creativity. Since travel plans have been on hold until now, the anniversary celebrations will continue into 2021, giving you even more reason to travel to Germany.  Discover more about this unique, diverse and welcoming country, its cities, lakes and mountains,  through the sounds that are dispersed throughout the landscape. </p>
+  <p class="p--xxl">Whether you are looking for the exciting buzz of big cities or the calming stillness of nature, Germany offers you the perfect harmony of both. To mark the 250th birthday of one of the greatest musical composers of all-time, Beethoven, we’re celebrating the anniversary by immersing ourselves in the sounds of Germany - a symphony that would have sparked Beethoven’s creativity. Since travel plans have been on hold until now, the anniversary celebrations will continue into 2021, giving you even more reason to travel to Germany. Turn up the volume of the sounds of Germany and discover this unique, diverse and welcoming country.</p>
 
 ---
 
@@ -36,8 +36,10 @@ intro: >
   <div class="container">
     <div class="row">
       {% for citypage in citypages %}
+      {% assign imageid = citypage.id | append: '-banner' %}
+      {% assign image = site.data.images | where: 'id', imageid %}
       <div class="col col--6">
-        <div class="img img--4-3 rounded--md depth--md depth--md-hover" style="background-image: url({{site.img}}/pages/{{citypage.id}}/banner.jpg)">
+        <div class="img img--4-3 rounded--md depth--md depth--md-hover" style="background-image: url({{site.img}}/pages/{{image[0].src}})">
           <a href="{{site.baseurl}}{{citypage.url}}" class="img__link"></a>
           <div class="img__content">
             <div class="boxpad--sm theme--dark">
@@ -48,6 +50,11 @@ intro: >
             </div>
           </div>
           <div class="img__overlay"></div>
+          {% if image[0].copyright %}
+          <div class="img__copyright">
+            {% include components/copyright.html %}
+          </div>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
@@ -57,7 +64,9 @@ intro: >
     <!-- Germany page -->
     {% assign germanypage = site.html_pages | where: 'id', 'germany' %}
     {% for germanypage in germanypage %}
-    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/germany/banner.jpg);">
+    {% assign imageid = germanypage.id | append: '-banner' %}
+    {% assign image = site.data.images | where: 'id', imageid %}
+    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{image[0].src}})">
       <a href="{{site.baseurl}}/germany" class="img__link"></a>
       <div class="img__content">
         <div class="boxpad--md">
@@ -68,6 +77,11 @@ intro: >
         </div>
       </div>
       <div class="img__overlay"></div>
+      {% if image[0].copyright %}
+      <div class="img__copyright">
+        {% include components/copyright.html %}
+      </div>
+      {% endif %}
     </div>
     {% endfor %}
   </div>

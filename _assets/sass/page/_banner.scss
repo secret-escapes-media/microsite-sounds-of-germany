@@ -26,6 +26,11 @@ $nav-height-sm:  104px;
     max-width: $xxl;
     margin: auto;
   }
+  &__copyright {
+    position: absolute;
+    bottom: 0; right: 0;
+    z-index: $z-overlay-upper;
+  }
   &__wrap {
     text-shadow: 0 10px 20px rgba($black,0.2);
     position: relative;

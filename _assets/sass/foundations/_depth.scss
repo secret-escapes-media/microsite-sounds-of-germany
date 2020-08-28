@@ -25,5 +25,8 @@
     @include depth(8px);
     &-hover:hover { @include depth(12px); }
   }
+  &--flat {
+    border: 1px solid rgba($black, .2);
+  }
 }
 

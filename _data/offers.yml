@@ -1,4 +1,259 @@
 
+- title: Grand hotel in a great Berlin location - Fully refundable
+  location: Derag Livinghotel Grosser Kurfürst, Germany
+  description: Elegant, modern hotel near the centre of the German capital
+  price: 58
+  price-description: per room per night
+  saved: 50
+  expires: 2021-08-29
+  image: https://secretescapes-web.imgix.net/hotels/142/dd375881_7c1d_4285_9aaf_3b2e6d1ff249.jpg?auto=format,compress
+  link: https://www.secretescapes.com/grand-hotel-in-a-great-berlin-location-fully-refundable-derag-livinghotel-grosser-kurfuerst-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Sleek & elegant Munich hotel stay - Fully refundable
+  location: Rocco Forte The Charles Hotel, Germany
+  description: Contemporary grace at a central Munich hotel&nbsp;
+  price: 288
+  price-description: per room per night
+  saved: 28
+  expires: 2021-08-27
+  image: https://secretescapes-web.imgix.net/hotels/1207/341ffb6f_bee8_49dc_bb63_65f5ff112f5d.jpg?auto=format,compress
+  link: https://www.secretescapes.com/sleek-and-elegant-munich-hotel-stay-fully-refundable-rocco-forte-the-charles-hotel-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: munich
+
+
+- title: Stylish Berlin stay near Alexanderplatz - Fully refundable
+  location: The Weinmeister Berlin Mitte, Germany
+  description: Explore Berlin from a hip, high-design spa hotel in stylish Mitte
+  price: 72
+  price-description: per room per night
+  saved: 59
+  expires: 2021-08-26
+  image: https://secretescapes-web.imgix.net/hotels/1245/b1bd99cb_bda2_4d16_a2ff_669a9da65e8d.jpg?auto=format,compress
+  link: https://www.secretescapes.com/stylish-berlin-stay-near-alexanderplatz-fully-refundable-the-weinmeister-berlin-mitte-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Charming Berlin hotel with a roof terrace - Fully refundable
+  location: Hyperion Hotel Berlin, Germany
+  description: Classic Berlin pad with a roof terrace
+  price: 89
+  price-description: per room per night
+  saved: 58
+  expires: 2021-08-25
+  image: https://secretescapes-web.imgix.net/hotels/1003/3351776c_97cb_4cee_a1c1_12e1687f0eae.jpg?auto=format,compress
+  link: https://www.secretescapes.com/charming-berlin-hotel-with-a-roof-terrace-fully-refundable-hyperion-hotel-berlin-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Urban oasis in Berlin’s leafy Schöneberg district - Fully refundable
+  location: The niu Dwarf, Germany
+  description: Garden calm in a cool Berlin locale&nbsp;
+  price: 48
+  price-description: per room per night
+  saved: 24
+  expires: 2021-08-17
+  image: https://secretescapes-web.imgix.net/hotels/1050/2c0578f7_90e6_46ce_a7c8_bd105746640d.jpg?auto=format,compress
+  link: https://www.secretescapes.com/urban-oasis-in-berlins-leafy-schoneberg-district-fully-refundable-the-niu-dwarf-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Opulent hotel in vibrant Berlin - Fully refundable
+  location: The Westin Grand Berlin, Germany
+  description: Glamorous five-star spa hotel in Berlin Mitte
+  price: 135
+  price-description: per room per night
+  saved: 33
+  expires: 2021-07-13
+  image: https://secretescapes-web.imgix.net/hotels/546/a0524f99_92c9_489b_a847_cc3547c9906b.jpg?auto=format,compress
+  link: https://www.secretescapes.com/opulent-hotel-in-vibrant-berlin-fully-refundable-the-westin-grand-berlin-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Explore Berlin's vibrant culture
+  location: Berlin, Germany
+  description: A versatile city trip exploring Berlin with cultural inclusions
+  price: 99
+  price-description: Based on 2 people for 2 nights
+  saved: 0
+  expires: 2029-12-18
+  image: https://secretescapes-web.imgix.net/webRedirects/320/be854d2d_2bab_444b_a1df_fe72e3180d99.jpg?auto=format,compress
+  link: https://www.secretescapes.com/explore-berlins-vibrant-culture-uk/sale-wrd
+  attribute-refundable: true
+  attribute-flights: true
+  attribute-customisable: true
+  page: berlin
+
+
+- title: 5* luxury Hamburg hotel with spa - Fully refundable
+  location: Grand Elysée Hamburg, Germany
+  description: Five-star spa hotel with views over Hamburg's Moorweiden Park
+  price: 144
+  price-description: per room per night
+  saved: 49
+  expires: 2021-08-11
+  image: https://secretescapes-web.imgix.net/hotels/995/df93f17c_c325_4740_8f8a_d3c315323dc7.jpg?auto=format,compress
+  link: https://www.secretescapes.com/5-star-luxury-hamburg-hotel-with-spa-fully-refundable-grand-elysee-hamburg-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: hamburg
+
+
+- title: Stylish boutique hotel in the heart of Dresden - Fully refundable
+  location: HYPERION Hotel Dresden am Schloss, Germany
+  description: A contemporary boutique hotel in Dresden, complete with a tempting medieval spa
+  price: 89
+  price-description: per room per night
+  saved: 48
+  expires: 2021-08-09
+  image: https://secretescapes-web.imgix.net/hotels/964/356bc28f_bd7c_4315_b631_4dd78c9bd59b.jpg?auto=format,compress
+  link: https://www.secretescapes.com/stylish-boutique-hotel-in-the-heart-of-dresden-fully-refundable-hyperion-hotel-dresden-am-schloss-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: dresden
+
+
+- title: Sleek Munich design hotel with a Michelin restaurant – Fully refundable
+  location: Living Hotel Das Viktualienmarkt, Germany
+  description: Design-conscious hotel in the heart of Munich
+  price: 117
+  price-description: per room per night
+  saved: 42
+  expires: 2021-08-18
+  image: https://secretescapes-web.imgix.net/hotels/137/32880afb_e0ae_4678_aaa5_25bc686061fd.jpg?auto=format,compress
+  link: https://www.secretescapes.com/sleek-munich-design-hotel-with-a-michelin-restaurant-fully-refundable-living-hotel-das-viktualienmarkt-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Brand-new stylish boutique hotel in Leipzig - Fully refundable
+  location: HYPERION Hotel Leipzig, Germany
+  description: Newly opened boutique hotel in the heart of Leipzig
+  price: 90
+  price-description: per room per night
+  saved: 49
+  expires: 2021-08-17
+  image: https://secretescapes-web.imgix.net/hotels/981/dcd33df7_30ef_470f_a10c_d4bddab65c39.jpg?auto=format,compress
+  link: https://www.secretescapes.com/brand-new-stylish-boutique-hotel-in-leipzig-fully-refundable-hyperion-hotel-leipzig-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: leipzig
+
+
+- title: Modern Munich hotel near city centre sights - Fully refundable
+  location: HYPERION Hotel München, Germany
+  description: Sleek and luxurious stay near the centre of Munich
+  price: 89
+  price-description: per room per night
+  saved: 63
+  expires: 2021-08-05
+  image: https://secretescapes-web.imgix.net/hotels/870/6c77945c_41a4_41fa_9b5f_d4ef596d8de7.jpg?auto=format,compress
+  link: https://www.secretescapes.com/modern-munich-hotel-near-city-centre-sights-fully-refundable-hyperion-hotel-muenchen-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: munich
+
+
+- title: Stylish 5* Munich stay with an optional suite – Fully refundable
+  location: Hotel München Palace, Germany
+  description: Five-star Munich hotel with a rooftop terrace and wellness facilities
+  price: 208
+  price-description: per room per night
+  saved: 42
+  expires: 2021-08-15
+  image: https://secretescapes-web.imgix.net/hotels/1004/8e80bd9a_2a79_4f7f_b005_063fd2947b4d.jpg?auto=format,compress
+  link: https://www.secretescapes.com/stylish-5-star-munich-stay-with-an-optional-suite-fully-refundable-hotel-muenchen-palace-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: munich
+
+
+- title: Modern hotel on the outskirts of Dresden - Fully refundable
+  location: Radisson Blu Park Hotel & Conference Centre, Radebeul, Germany
+  description: Upmarket elegance near Dresden in the Saxon countryside
+  price: 77
+  price-description: per room per night
+  saved: 37
+  expires: 2021-08-14
+  image: https://secretescapes-web.imgix.net/hotels/1084/a362848e_5421_43e2_92c7_76d5d410f2f2.jpg?auto=format,compress
+  link: https://www.secretescapes.com/modern-hotel-on-the-outskirts-of-dresden-fully-refundable-radisson-blu-park-hotel-and-conference-centre-radebeul-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: dresden
+
+
+- title: Stylish Berlin hotel in vibrant Kreuzberg - Fully refundable
+  location: Mövenpick Hotel Berlin, Germany
+  description: Cool Berlin hotel near Potsdamer Platz and Checkpoint Charlie
+  price: 85
+  price-description: per room per night
+  saved: 48
+  expires: 2021-08-13
+  image: https://secretescapes-web.imgix.net/hotels/967/2a8e20df_0407_484d_83af_8c2ee05dcb17.jpg?auto=format,compress
+  link: https://www.secretescapes.com/stylish-berlin-hotel-in-vibrant-kreuzberg-fully-refundable-movenpick-hotel-berlin-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: berlin
+
+
+- title: Hip Nuremberg hotel with a roof terrace & city views – Fully refundable
+  location: the niu Leo, Germany
+  description: Stylish Nuremberg hotel with unique lion-inspired design details
+  price: 53
+  price-description: per room per night
+  saved: 55
+  expires: 2021-08-08
+  image: https://secretescapes-web.imgix.net/hotels/966/59c8eb8a_78a2_41b4_89b3_a57efa4da29c.jpg?auto=format,compress
+  link: https://www.secretescapes.com/hip-nuremberg-hotel-with-a-roof-terrace-and-city-views-fully-refundable-the-niu-leo-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page:
+
+
+- title: Brand-new Frankfurt design hotel with rooftop views – Fully refundable
+  location: THE FLAG WEST M., Germany
+  description: Modern Frankfurt stay at a brand-new hotel with city views
+  price: 68
+  price-description: per room per night
+  saved: 35
+  expires: 2021-08-08
+  image: https://secretescapes-web.imgix.net/hotels/952/05083a59_4b81_44e1_833f_0a72435b8916.jpg?auto=format,compress
+  link: https://www.secretescapes.com/brand-new-frankfurt-design-hotel-with-rooftop-views-fully-refundable-the-flag-west-m-germany/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page:
+
+
 - title: 5* Berlin spa hotel with Michelin-starred dining - Fully refundable
   location: The Mandala Hotel, Germany
   description: Five-star Berlin hotel with award-winning dining
@@ -8,30 +263,10 @@
   expires: 2021-08-06
   image: https://secretescapes-web.imgix.net/hotels/858/623ebe63_ba60_4675_8952_4b7889a2c6a5.jpg?auto=format,compress
   link: https://www.secretescapes.com/5-star-berlin-spa-hotel-with-michelin-starred-dining-fully-refundable-the-mandala-hotel-germany/sale-hotel
-  page: berlin
-
-
-- title: Modern Munich hotel near city centre sights - Fully refundable
-  location: HYPERION Hotel München, Germany
-  description: Sleek and luxurious stay near the centre of Munich
-  price: 89
-  price-description: per room per night
-  saved: 65
-  expires: 2021-08-05
-  image: https://secretescapes-web.imgix.net/hotels/870/6c77945c_41a4_41fa_9b5f_d4ef596d8de7.jpg?auto=format,compress
-  link: https://www.secretescapes.com/modern-munich-hotel-near-city-centre-sights-fully-refundable-hyperion-hotel-muenchen-germany/sale-hotel
-
-
-- title: Explore Berlin's vibrant culture
-  location: Berlin, Germany
-  description: A versatile city trip exploring Berlin with cultural inclusions
-  price: 159
-  price-description: Based on 2 people for 2 nights
-  saved: 0
-  expires: 2029-12-18
-  image: https://secretescapes-web.imgix.net/webRedirects/320/be854d2d_2bab_444b_a1df_fe72e3180d99.jpg?auto=format,compress
-  link: https://www.secretescapes.com/explore-berlins-vibrant-culture-uk/sale-wrd
-  page: berlin
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page:
 
 
 - title: Swish hotel stay on the outskirts of Munich - Fully refundable
@@ -43,15 +278,7 @@
   expires: 2021-08-01
   image: https://secretescapes-web.imgix.net/hotels/839/15539835_566d_4298_b1a8_5124d9a398bd.jpg?auto=format,compress
   link: https://www.secretescapes.com/swish-hotel-stay-on-the-outskirts-of-munich-fully-refundable-the-niu-loco-germany/sale-hotel
-
-
-- title: Opulent hotel in vibrant Berlin - Fully refundable
-  location: The Westin Grand Berlin, Germany
-  description: Glamorous five-star spa hotel in Berlin Mitte
-  price: 126
-  price-description: per room per night
-  saved: 33
-  expires: 2021-07-13
-  image: https://secretescapes-web.imgix.net/hotels/546/a0524f99_92c9_489b_a847_cc3547c9906b.jpg?auto=format,compress
-  link: https://www.secretescapes.com/opulent-hotel-in-vibrant-berlin-fully-refundable-the-westin-grand-berlin-germany/sale-hotel
-  page: berlin
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+  page: munich

@@ -1,7 +1,11 @@
+
+{% assign imageid = page.id | append: '-banner' %}
+{% assign image = site.data.images | where: 'id', imageid %}
+
 <div class="banner">
 
   <div class="banner__fades"></div>
-  <div class="banner__bg" style="background-image: url('{{site.img}}/pages/{{page.id}}/banner.jpg')"></div>
+  <div class="banner__bg" style="background-image: url('{{site.img}}/pages/{{image[0].src}}')"></div>
   <div class="soundwave">
     <div class="soundwave__node soundwave__node--xxxl">
       {% include svg/soundwave-node.html %}
@@ -31,4 +35,10 @@
       {% include svg/soundwave-node.html %}
     </div>
   </div>
+
+  {% if image[0].copyright %}
+  <div class="banner__copyright">
+    {% include components/copyright.html %}
+  </div>
+  {% endif %}
 </div>

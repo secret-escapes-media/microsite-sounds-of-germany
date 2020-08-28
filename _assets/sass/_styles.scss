@@ -1,5 +1,45 @@
 // general styles for the project that wouldn't be a reuseable component
 
+.copyright {
+  @include transition;
+  position: relative;
+  background-color: rgba($black,0);
+  &:hover {
+    background-color: rgba($black,0.8);
+  }
+  &:after {
+    content: "©";
+    font-size: $s1;
+    font-weight: 600;
+    height: $s3;
+    width: $s3;
+    line-height: $s3;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba($black,0.6);
+    color: $grey-lightest;
+  }
+  &__text {
+    @include transition;
+    display: inline;
+    opacity: 0;
+    padding: 0 $s0;
+    font-size: $s-1;
+    border-right: 1px solid rgba($white,0.3);
+    color: $grey-lightest;
+  }
+  &:hover &__text { opacity: 1; }
+}
+
+.mid-banner {
+  position: relative;
+  &__copyright {
+    position: absolute;
+    bottom: 0; right: 0;
+  }
+}
+
 .title {
   position: relative;
   display: block;

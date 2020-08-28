@@ -37,4 +37,9 @@
     @include transition;
   }
   &:hover &__overlay { background-color: rgba($black,.6); }
+  &__copyright {
+    position: absolute;
+    bottom: 0; right: 0;
+    z-index: $z-overlay-upper;
+  }
 }

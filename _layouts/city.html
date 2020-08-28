@@ -5,9 +5,8 @@ layout: page
 <div class="theme--dark bg--black">
   <div class="container container--xxl text--center">
     <div class="p--xxxxl text--smallcaps">The sound of</div>
-    <div class="space--xs"></div>
     <div class="h h--xxxl h--display">{{page.title}}</div>
-    <hr class="hr--center">
+    <div class="space--md"></div>
     <div class="p--xl">{{page.intro}}</div>
   </div>
   <div class="space--xxl"></div>
@@ -21,10 +20,17 @@ layout: page
     </div>
 
     {% for poi in page.video-pois %}
+      {% assign image = site.data.images | where: 'id', poi.id %}
       <div class="bob{% cycle '',' bob--swap' %}">
 
         <div class="bob__img">
-          <div class="img img--3-2" style="background-image: url({{site.img}}/pages/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
+          <div class="img img--3-2" style="background-image: url({{site.img}}/pages/{{image[0].src}});">
+            {% if image[0].copyright %}
+            <div class="img__copyright">
+              {% include components/copyright.html %}
+            </div>
+            {% endif %}
+          </div>
         </div>
 
         <div class="bob__text">
@@ -37,8 +43,15 @@ layout: page
   </div>
 </div>
 
-<div class="vpad--xxxxl bg--img-fixed" style="background-image: url({{site.img}}/pages/{{page.id}}/banner-mid-page.jpg);">
+{% assign imageid = page.id | append: '-mid-banner' %}
+{% assign image = site.data.images | where: 'id', imageid %}
+<div class="vpad--xxxxl bg--img-fixed mid-banner" style="background-image: url({{site.img}}/pages/{{image[0].src}});">
   <div class="space--xxxxl"></div>
+  {% if image[0].copyright %}
+  <div class="mid-banner__copyright">
+    {% include components/copyright.html %}
+  </div>
+  {% endif %}
 </div>
 
 <div class="vpad--xxl">
@@ -49,10 +62,17 @@ layout: page
     </div>
 
     {% for poi in page.pois %}
+      {% assign image = site.data.images | where: 'id', poi.id %}
       <div class="bob{% cycle '',' bob--swap' %}">
 
         <div class="bob__img">
-          <div class="img img--3-2" style="background-image: url({{site.img}}/pages/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
+          <div class="img img--3-2" style="background-image: url({{site.img}}/pages/{{image[0].src}});">
+            {% if image[0].copyright %}
+            <div class="img__copyright">
+              {% include components/copyright.html %}
+            </div>
+            {% endif %}
+          </div>
         </div>
 
         <div class="bob__text">
@@ -62,6 +82,12 @@ layout: page
 
       </div>
     {% endfor %}
+  </div>
+  <div class="container">
+    <div class="width width--xxl boxpad--md text--center rounded--md depth--flat">
+      <p class="p--xxl">{{page.link-out.text}}</p>
+      <div class="space--xs"></div>
+      <a href="{{page.link-out.link}}" class="btn btn--sm" target="_blank">Read more</a>
     </div>
   </div>
 </div>
