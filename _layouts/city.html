@@ -57,8 +57,14 @@ layout: page
 <div class="vpad--xxl">
   <div class="container">
     <div class="text--center">
-      <div class="h h--lg">{{page.title}} & beyond</div>
-      <div class="space--lg"></div>
+      <div class="h h--lg">
+        {% if page.other-pois-title %}
+          {{page.other-pois-title}}
+        {% else %}
+          {{page.title}} & beyond
+        {% endif %}
+      </div>
+      <div class="space--xl"></div>
     </div>
 
     {% for poi in page.pois %}
