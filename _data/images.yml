@@ -17,7 +17,7 @@
 
 - id: stuttgart-mid-banner
   src: stuttgart/banner-mid-page.jpg
-  copyright: 
+  copyright:
 
 - id: berlin-banner
   src: berlin/banner.jpg
@@ -25,7 +25,7 @@
 
 - id: berlin-mid-banner
   src: berlin/banner-mid-page.jpg
-  copyright:
+  copyright: "visitBerlin/iStock.com, Photo: bluejayphoto"
 
 - id: leipzig-banner
   src: leipzig/banner.jpg
