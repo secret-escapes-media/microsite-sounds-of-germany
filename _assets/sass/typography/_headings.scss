@@ -26,6 +26,11 @@
     &--xxs    { font-size: $s2; }
     &--xxxs   { font-size: $s1; }
   }
+  &--core,
+  &--serif {
+    font-family: $serif;
+    font-weight: 600;
+  }
 }
 
 .h--sub {
