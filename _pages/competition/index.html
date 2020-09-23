@@ -10,16 +10,16 @@ nav-order: 7
 banner:
   content: >
     <div class="container container--no-padding">
-      <div class="width width--xxl text--center">
+      <div class="width width--xxxl text--center">
         <div class="h h--xxl">
-          Win a trip to Beethoven's Bonn
+          Win a trip to Beethoven’s Bonn, <br />plus a Sennheiser soundbar
         </div>
         <div class="space--md"></div>
         <a href="#entry-form" class="btn btn--lg">Enter now</a>
       </div>
     </div>
 
-intro: In celebration of Beethoven’s 250th birthday, we’re sending one lucky winner to the composer’s birthplace to experience the sounds of Germany for themselves.
+intro: In celebration of Beethoven’s 250th birthday and in partnership with Sennheiser, we’re sending one lucky winner to the composer’s birthplace of Bonn to experience the sounds of Germany for themselves.
 
 enter-cta: Enter Now
 
@@ -34,13 +34,13 @@ prizes:
     title: Discover Bonn
     description: While you’re exploring the enchanting old capital city of Bonn, be sure to experience the museum at Ludwig van Beethoven's birthplace, where its impressive Baroque facade will draw you into the place where the great composer’s journey began.
 
-  - id: headphones
-    title: Headphones you can't beat
-    description: You’ll also receive a state of the art pair of Sennheiser headphones to enjoy on your trip. Play the enchanting sounds of Beethoven’s masterpieces as you stroll through his home city, marvelling at the architecture, art and local history that inspired him.
+  - id: sennheiser
+    title: Sennheiser Soundbar
+    description: The lucky winner will also receive a Sennheiser soundbar. The new AMBEO delivers a 3D home audio experience like you’ve never heard before. You can’t help but feel it with its 13 high-end drivers working in unison to create a virtual 5.1.4 sound experience in one sleek device. With advanced room calibration, it immerses you in studio-grade sound adapted to the specifics of your living room to direct sound and  immerse you in an unforgettable 3D experience.
 
 secondprize: >
-  <p class="p--xl text--bold">One lucky runner-up will also be the recipient of a Sennheiser AMBEO Soundbar.</p>
-  <p>The new AMBEO delivers a 3D home audio experience like you’ve never heard before. You can’t help but feel it with its 13 high-end drivers working in unison to create a virtual 5.1.4 sound experience in one sleek device. With advanced room calibration, it immerses you in studio-grade sound adapted to the specifics of your living room to direct sound and  immerse you in an unforgettable 3D experience. </p>
+  <p class="p--xl text--bold">We will also be giving away two pairs of Sennheiser headphones to two runners up.</p>
+  <p>The Momentum Wireless combines technology and craftsmanship that track to the rhythm of your life. You decide how much of the world you want to let in. Take them off, the music stops. Put them on and you're transported back to your own sonic space. Why not start your journey with the enchanting sounds of Beethoven’s masterpieces?</p>
 
 
 
@@ -71,7 +71,7 @@ competition-form:
           invalid: true
     - id: opt-in
       type: radio
-      label: Would you like to receive emails from our Partner brand?
+      label: Would you like to receive emails from the German National Tourist Board?
       required: true
       options:
         - id: opt-in-true
@@ -82,7 +82,7 @@ competition-form:
           value: 'no'
   submit: Submit Entry
   terms: >
-    By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-open-modal="competition-terms">terms and conditions</a> of this competition
+    By submitting your entry, you agree to the <a href="#" class="js-open-modal text--link" data-open-modal="competition-terms">terms and conditions</a> of this competition
 ---
 
 
@@ -109,13 +109,13 @@ competition-form:
   {% endfor %}
 
   <div class="vpad--lg text--center">
-    <div class="p--xxxl text--smallcaps">Second prize: Sennheiser AMBEO Soundbar</div>
+    <div class="p--xxxl text--smallcaps">Runner-up prizes</div>
   </div>
 
   <div class="container rounded--md depth--md container--no-padding bg--black theme--dark">
     <div class="row row--no-gutters row--valign-center">
       <div class="col col--6">
-        <div class="img img--4-3" style="background-image: url({{site.img}}/pages/competition/soundbar.jpg);"></div>
+        <div class="img img--4-3" style="background-image: url({{site.img}}/pages/competition/runnerup.jpg);"></div>
       </div>
       <div class="col col--6">
         <div class="boxpad--md">
