@@ -5,7 +5,7 @@
 
 - id: dusseldorf-banner
   src: dusseldorf/banner.jpg
-  copyright: Getty (Phillipp Klinger)
+  copyright: "Getty (Phillipp Klinger)"
 
 - id: dusseldorf-mid-banner
   src: dusseldorf/banner-mid-page.jpg
@@ -13,7 +13,7 @@
 
 - id: stuttgart-banner
   src: stuttgart/banner.jpg
-  copyright: Werner Dieterich
+  copyright: "Werner Dieterich"
 
 - id: stuttgart-mid-banner
   src: stuttgart/banner-mid-page.jpg
@@ -29,11 +29,11 @@
 
 - id: leipzig-banner
   src: leipzig/banner.jpg
-  copyright: Philipp Kirschner
+  copyright: "Philipp Kirschner"
 
 - id: leipzig-mid-banner
   src: leipzig/banner-mid-page.jpg
-  copyright: Tom Schulze
+  copyright: "Tom Schulze"
 
 - id: offers-banner
   src: offers/banner.jpg
@@ -48,23 +48,23 @@
 
 - id: drachenburg-castle
   src: germany/poi/drachenburg-castle.jpg
-  copyright: Getty Images william87
+  copyright: "Getty Images william87"
 
 - id: dresden
   src: germany/poi/dresden.jpg
-  copyright: DZT_Andreas Antoni
+  copyright: "DZT_Andreas Antoni"
 
 - id: frankfurt
   src: germany/poi/frankfurt.jpg
-  copyright: DZT_Francesco Carovillano
+  copyright: "DZT_Francesco Carovillano"
 
 - id: hamburg
   src: germany/poi/hamburg.jpg
-  copyright: fotolia powell83
+  copyright: "fotolia powell83"
 
 - id: harz-mountains-national-park
   src: germany/poi/harz-mountains-national-park.jpg
-  copyright: DZT_Francesco Carovillano
+  copyright: "DZT_Francesco Carovillano"
 
 - id: lake-constance
   src: germany/poi/lake-constance.jpg
@@ -76,123 +76,123 @@
 
 - id: partnach-gorge
   src: germany/poi/partnach-gorge.jpg
-  copyright: DZT_Oscar Dominguez
+  copyright: "DZT_Oscar Dominguez"
 
 - id: saxon-switzerland
   src: germany/poi/saxon-switzerland.jpg
-  copyright: DZT_Francois Thierens
+  copyright: "DZT_Francois Thierens"
 
 - id: spree-forest
   src: germany/poi/spree-forest.jpg
-  copyright: Marcin Nowak_Anna Nowak
+  copyright: "Marcin Nowak_Anna Nowak"
 
 - id: steinhuder-sea
   src: germany/poi/steinhuder-sea.jpg
-  copyright: Naturpark Steinhuder Meer_Bernd Wolter
+  copyright: "Naturpark Steinhuder Meer_Bernd Wolter"
 
 - id: zugspitze
   src: germany/poi/zugspitze.jpg
-  copyright: DZT
+  copyright: "DZT"
 
 ###############################################################
 ######### DUSSELDORF POIS
 
 - id: enjoy-the-rhenish-way-of-life
   src: dusseldorf/poi/enjoy-the-rhenish-way-of-life.jpg
-  copyright: Tourismus NRW e.V.
+  copyright: "Tourismus NRW e.V."
 
 - id: europes-densest-cultural-region
   src: dusseldorf/poi/europes-densest-cultural-region.jpg
-  copyright: Museumsmeile Bundeskunsthalle. Tourismus NRW e.V.
+  copyright: "Museumsmeile Bundeskunsthalle. Tourismus NRW e.V."
 
 - id: from-half-timbered-to-cosmopolitan
   src: dusseldorf/poi/from-half-timbered-to-cosmopolitan.jpg
-  copyright: DZT, Photodesigner Mark Wohlrab
+  copyright: "DZT, Photodesigner Mark Wohlrab"
 
 - id: ko-bogen-ii-und-konigsallee
   src: dusseldorf/poi/ko-bogen-ii-und-konigsallee.jpg
-  copyright:
+  copyright: "Kö-Bogen II: Düsseldorf Tourismus"
 
 - id: little-tokyo
   src: dusseldorf/poi/little-tokyo.jpg
-  copyright:
+  copyright: "Little Tokyo: Düsseldorf Tourismus"
 
 - id: tonhalle
   src: dusseldorf/poi/tonhalle.jpg
-  copyright: Düsseldorf Tourismus
+  copyright: "Düsseldorf Tourismus"
 
 ###############################################################
 ######### LEIPZIG POIS
 
 - id: gewandhaus-concert-hall
   src: leipzig/poi/gewandhaus-concert-hall.jpg
-  copyright: Jens Gerber
+  copyright: "Jens Gerber"
 
 - id: leipzig-opera
   src: leipzig/poi/leipzig-opera.jpg
-  copyright: Kirsten Nijhof
+  copyright: "Kirsten Nijhof"
 
 - id: monument-to-the-battle-of-nations
   src: leipzig/poi/monument-to-the-battle-of-nations.jpg
-  copyright: LTM_Back-packer.org
+  copyright: "LTM_Back-packer.org"
 
 - id: spinnerei-galleries
   src: leipzig/poi/spinnerei-galleries.jpg
-  copyright: PK Fotografie
+  copyright: "PK Fotografie"
 
 - id: st-nicholas-church
   src: leipzig/poi/st-nicholas-church.jpg
-  copyright: PK Fotografie
+  copyright: "PK Fotografie"
 
 - id: st-thomas-church
   src: leipzig/poi/st-thomas-church.jpg
-  copyright: PK Fotografie
+  copyright: "PK Fotografie"
 
 ###############################################################
 ######### BERLIN POIS
 
 - id: berlin-radio-tower
   src: berlin/poi/berlin-radio-tower.jpg
-  copyright: visitBerlin_Picture Dagmar Schwelle. In cooperation with visitBerlin.
+  copyright: "Berlin radio tower © visitBerlin, Photo: Dagmar Schwelle"
 
 - id: borsigwerke
   src: berlin/poi/borsigwerke.jpg
-  copyright:  In cooperation with visitBerlin.
+  copyright: "Borsigwerke © visitBerlin, Photo: Dagmar Schwelle"
 
 - id: german-technical-museum
   src: berlin/poi/german-technical-museum.jpg
-  copyright: visumate. In cooperation with visitBerlin.
+  copyright: "visumate. In cooperation with visitBerlin."
 
 - id: kpm-berlin
   src: berlin/poi/kpm-berlin.jpg
-  copyright:  In cooperation with visitBerlin.
+  copyright: "KPM Berlin - Royal Porcelain Factory © Königliche Porzellan-Manufaktur Berlin"
 
 - id: kulturbrauerei-berlin
   src: berlin/poi/kulturbrauerei-berlin.jpg
-  copyright: visitBerlin_Picture Nele Niederstadt. In cooperation with visitBerlin.
+  copyright: "KulturBrauerei Berlin © visitBerlin, Photo: Nele Niederstadt"
 
 - id: ullsteinhaus
   src: berlin/poi/ullsteinhaus.jpg
-  copyright:  In cooperation with visitBerlin.
+  copyright: "Ullsteinhaus © visitBerlin, Photo: Steve Simon"
 
 ###############################################################
 ######### STUTTGART POIS
 
 - id: ludwigsburg-residential-palace
   src: stuttgart/poi/ludwigsburg-residential-palace.jpg
-  copyright: GNTB
+  copyright: "GNTB"
 
 - id: mainau-island
   src: stuttgart/poi/mainau-island.jpg
-  copyright: GNTB
+  copyright: "GNTB"
 
 - id: mercedes-benz-museum
   src: stuttgart/poi/mercedes-benz-museum.jpg
-  copyright: GNTB
+  copyright: "GNTB"
 
 - id: porsche-museum
   src: stuttgart/poi/porsche-museum.jpg
-  copyright: Porsche AG (Ulli Jooss)
+  copyright: "Porsche AG (Ulli Jooss)"
 
 - id: the-sepulchral-chapel-on-wurttemberg-hill
   src: stuttgart/poi/the-sepulchral-chapel-on-wurttemberg-hill.jpg
@@ -200,7 +200,7 @@
 
 - id: weissenhof-estate
   src: stuttgart/poi/weissenhof-estate.jpg
-  copyright: GNTB
+  copyright: "GNTB"
 
 
 

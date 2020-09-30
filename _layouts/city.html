@@ -121,6 +121,7 @@ layout: page
   <!-- Continue -->
   {% assign nextid = page.nav-order | plus: 1 %}
   {% assign citypages = site.html_pages | where: 'nav-order', nextid %}
+
   {% for nextpage in citypages %}
   {% if nextpage.layout == 'city' %}
   <div class="container vpad--xxl">

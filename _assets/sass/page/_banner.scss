@@ -31,6 +31,23 @@ $nav-height-sm:  104px;
     bottom: 0; right: 0;
     z-index: $z-overlay-upper;
   }
+  &__sennheiser {
+    width: 60%;
+    max-width: 280px;
+    margin: auto;
+    position: relative;
+    display: block;
+    background-image: url('../img/logo/sennheiser-wh.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 21%;
+    }
+  }
   &__wrap {
     text-shadow: 0 10px 20px rgba($black,0.2);
     position: relative;
