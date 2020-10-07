@@ -161,11 +161,11 @@
 
 - id: german-technical-museum
   src: berlin/poi/german-technical-museum.jpg
-  copyright: "visumate. In cooperation with visitBerlin."
+  copyright: "German Technical Museum © visitBerlin, Photo: visumate"
 
 - id: kpm-berlin
   src: berlin/poi/kpm-berlin.jpg
-  copyright: "KPM Berlin - Royal Porcelain Factory © Königliche Porzellan-Manufaktur Berlin"
+  copyright: "KPM Berlin - Royal Porcelain Factory © visitBerlin, Photo: Königliche Porzellan-Manufaktur Berlin"
 
 - id: kulturbrauerei-berlin
   src: berlin/poi/kulturbrauerei-berlin.jpg
