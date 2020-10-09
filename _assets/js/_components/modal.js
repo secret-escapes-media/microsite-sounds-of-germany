@@ -2,8 +2,12 @@ var modal          = $('.js-modal'),
     modalLaunchBtn = $('.js-open-modal'),
     modalCloseBtn  = $('.js-close-modal');
 
+function modalSplashFade(){
+  $('.js-modal-splashscreen').fadeOut();
+  window.wirewax.triggerEvent(window.wirewax.events.triggers.PLAY);
+};
 $('.js-modal-splashscreen').click(function(){
-  $(this).fadeOut();
+  modalSplashFade();
 });
 
 // opens modal
@@ -40,7 +44,11 @@ function modalOpen(event, modalId){
   // open modal
   modal.fadeIn('250', function(){
     $(this).removeClass('is-closed').addClass('is-open');
+    setTimeout(function(){
+      modalSplashFade();
+    },3000);
   });
+
 }
 
 // closes modal
@@ -55,6 +63,8 @@ function modalClose(event){
     $('.modal.is-open').removeClass('is-open').addClass('is-closed');
     // kill everything inside of video if its there
     $('.js-modal-video').empty();
+    // wirewax
+    window.wirewax.triggerEvent(window.wirewax.events.triggers.PAUSE);
   });
 }
 

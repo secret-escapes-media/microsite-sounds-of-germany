@@ -35,16 +35,6 @@
     background-color: $white;
     padding: $s2 $s3;
   }
-  &__video-pre {
-    position: absolute;
-    z-index: 100;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    background-color: rgba($black,0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   &__close {
     position: absolute;
     right: 0;
@@ -104,7 +94,7 @@
   &--standard { max-width: $xl; }
   &--series   { max-width: $xl; }
   &--image    { max-width: $xxl; }
-  &--youtube  {
+  &--video {
     width: 100%;
     .video__wrap {
       position: relative;
@@ -124,6 +114,17 @@
       bottom: 0;
       width: 100%;
       height: 100%;
+    }
+
+    .video__pre {
+      position: absolute;
+      z-index: 100;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      background-color: rgba($black,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   @include bp($md) {

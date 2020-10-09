@@ -20,11 +20,21 @@
 #####################################
 
 
+
 - id: video
   type: youtube
   pages:
     - id: all
   youtube-id: wHrDlDaFya4
+
+
+
+- id: overview-video
+  type: wirewax
+  pages:
+    - id: all
+  video-id: 8187937
+
 
 
 - id: sennheiser

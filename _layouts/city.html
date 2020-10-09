@@ -98,25 +98,20 @@ layout: page
   </div>
 </div>
 
-<div class="bg--grey-lightest">
+<div class="bg--grey-lightest vpad--xxl">
 
-  {% assign offers = site.data.offers | where: 'page', page.id %}
-  {% if offers.size > 0 %}
-    <div class="space--xxl"></div>
-    <div class="container">
-      <div class="text--center">
-        <div class="h h--lg">Offers</div>
-        <div class="space--lg"></div>
-      </div>
-      <div class="row">
-        {% for offer in offers %}
-          <div class="col col--6">
-            {% include offer/offer.html %}
-          </div>
-        {% endfor %}
-      </div>
+  <div class="container">
+
+    <div class="text--center">
+      <div class="h h--lg">Offers</div>
+      <div class="space--xxl"></div>
     </div>
-  {% endif %}
+
+    <div class="row row--xl-6-6 row--gutters-lg js-dynamic-offers" data-offer-sheet="{{page.title}}" data-offer-limit="4">
+      <div class="offers-loading"></div>
+    </div>
+
+  </div>
 
   <!-- Continue -->
   {% assign nextid = page.nav-order | plus: 1 %}
@@ -124,7 +119,7 @@ layout: page
 
   {% for nextpage in citypages %}
   {% if nextpage.layout == 'city' %}
-  <div class="container vpad--xxl">
+  <div class="container">
     <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{nextpage.id}}/banner.jpg);">
       <a href="{{site.baseurl}}{{nextpage.url}}" class="img__link"></a>
       <div class="img__content">
@@ -141,7 +136,7 @@ layout: page
   </div>
   {% else %}
   <!-- No more city pages, link to Germany page -->
-  <div class="container vpad--xxl">
+  <div class="container">
     <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/germany/banner.jpg);">
       <a href="{{site.baseurl}}/germany" class="img__link"></a>
       <div class="img__content">

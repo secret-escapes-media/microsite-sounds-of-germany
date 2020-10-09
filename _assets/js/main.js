@@ -11,3 +11,9 @@ $(document).ready(function(){
 });
 
 
+$('.js-toggle-bg-video').click(function(){
+  $('#banner-video').trigger('pause');
+});
+$('.page--overview .js-close-modal').click(function(){
+  $('#banner-video').trigger('play');
+});

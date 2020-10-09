@@ -58,13 +58,13 @@ $scale-xl: 17px;
       border-style: solid;
       border-radius: inherit;
       border-color: $primary;
-
     }
     &:hover, &:focus {
       color: $white;
       @include gradient($primary,$primary-dark);
       &:before { border-color: $primary-dark; }
     }
+    .theme--dark & { color: $white; }
   }
 
   // Scale
