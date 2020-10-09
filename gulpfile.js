@@ -68,6 +68,12 @@ function buildImages() {
   .pipe(gulp.dest('./_site/_assets/img/'));
 }
 
+// build for image files
+function buildVideos() {
+  return gulp.src('./_assets/video/**/*.*')
+  .pipe(gulp.dest('./_site/_assets/video/'));
+}
+
 // build for main js file
 function buildJsMain(cb) {
   return gulp.src([
@@ -124,6 +130,7 @@ function buildJs(cb) {
 // Watch files
 function watchFiles() {
   gulp.watch('./_assets/sass/**/*.scss', buildSass);
+  gulp.watch('./_assets/video/**/*.*', buildVideos);
   gulp.watch('./_assets/js/**/*.js', gulp.parallel(buildJsMain, buildJs));
   gulp.watch( // watch for jekyll
     [
@@ -207,12 +214,14 @@ var build = gulp.series(
     buildJekyll,
     buildSass,
     buildImages,
+    buildVideos,
     buildJsMain,
     buildJs
   )
 );
 var compress = gulp.parallel(
   cleanSass,
+  buildVideos,
   compressSass,
   compressJs,
   compressImages,
