@@ -19,23 +19,135 @@
 #
 #####################################
 
-
-
-- id: video
-  type: youtube
-  pages:
-    - id: all
-  youtube-id: wHrDlDaFya4
-
-
-
-- id: overview-video
+- id: video-overview
   type: wirewax
   pages:
-    - id: all
+    - id: overview
   video-id: 8187937
 
+- id: video-stuttgart
+  type: wirewax
+  pages:
+    - id: stuttgart
+  video-id: 8187978
+  pois:
+    - id: galatea-fountain
+      title: Galatea Fountain
+      description: This popular meeting spot offers incredible views. A perfect place to soak it all up, don’t miss the famous ice cream at Pinguin!
+    - id: mercedes-benz-museum
+      title: Mercedes-Benz Museum
+      description: Feel the need for speed? Check out the Mercedes-Benz Museum, covering nine levels this museum presents breathtaking vehicles and over 1,500 exhibits.
+    - id: porsche-museum
+      title: Porsche Museum
+      description: Where the outside is as stunning as the cars on the inside, the Porsche Museum takes visitors on a journey back through the history of Porsche.
+    - id: old-castle
+      title: Old Castle
+      description: Dating as far back as the 10th century, this Stuttgart icon is a great place to immerse yourself in the city’s fascinating history.
+    - id: stuttgart-collegiate-church
+      title: Stuttgart Collegiate Church
+      description: With roots in the 10th century, the Collegiate Church - with its unique towers - is the spiritual heart of the city and steeped in history.
+    - id: the-sepulchral-chapel
+      title: The Sepulchral Chapel on Württemberg Hill
+      description: With glorious views over the vineyards and the city, relish in the centuries-old history of the royal House of Württemberg.
+    - id: state-opera
+      title: State opera
+      description: Europe’s largest triple-branch theatre is a stalwart centre of the arts for the whole region. Enjoy opera, theatre and Stuttgart’s world-famous ballet.
+    - id: palace-square
+      title: Palace Square
+      description: This is the epicentre of all things Stuttgart. Surrounded by the city’s best attractions, head here to start your adventures in this captivating city.
 
+- id: video-dusseldorf
+  type: wirewax
+  pages:
+    - id: dusseldorf
+  video-id: 8188132
+  pois:
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+
+- id: video-leipzig
+  type: wirewax
+  pages:
+    - id: leipzig
+  video-id: 8188133
+  pois:
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+
+- id: video-berlin
+  type: wirewax
+  pages:
+    - id: berlin
+  video-id: 8188131
+  pois:
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: lorem
+      title: Lorem ipsum dolor
+      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
 
 - id: sennheiser
   image: sennheiser.jpg

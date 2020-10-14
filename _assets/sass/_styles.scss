@@ -103,3 +103,44 @@
     margin-right: 4px;
   }
 }
+
+.poi-card {
+  $margin: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: stretch;
+  &__image {
+    flex-shrink: 0;
+    z-index: $z-modal-layer-1;
+    width: 33.33%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-modal-layer-2;
+      background-color: rgba($black,.0175);
+    }
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    z-index: $z-modal-layer-3;
+    margin-top: $margin;
+    margin-left: -$margin;
+    margin-right: 0;
+    margin-bottom: $margin;
+    padding: $margin;
+    font-size: .9rem;
+    line-height: 1.33;
+    color: $black;
+    background-color: $white;
+  }
+  &__p {
+    padding-top: .25rem;
+  }
+}

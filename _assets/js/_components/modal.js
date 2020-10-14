@@ -2,6 +2,11 @@ var modal          = $('.js-modal'),
     modalLaunchBtn = $('.js-open-modal'),
     modalCloseBtn  = $('.js-close-modal');
 
+// init wirewax when player is present
+if ($('#se-wirewax').length != 0) {
+  window.wirewax.playerId = "se-wirewax";
+}
+
 function modalSplashFade(){
   $('.js-modal-splashscreen').fadeOut();
   window.wirewax.triggerEvent(window.wirewax.events.triggers.PLAY);
@@ -47,6 +52,10 @@ function modalOpen(event, modalId){
     setTimeout(function(){
       modalSplashFade();
     },3000);
+    // shows end screen on video end
+    window.wirewax.addEventListener(window.wirewax.events.listeners.VIDEO_END, function(){
+      $('.js-video-endscreen').fadeIn();
+    });
   });
 
 }

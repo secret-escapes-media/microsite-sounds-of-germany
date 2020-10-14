@@ -1,18 +1,42 @@
 <div class="modal modal--video modal--wirewax is-closed" data-modal-id="{{modal.id}}">
   <div class="js-close-modal modal__close"></div>
+  <div class="video__wrap">
 
-  <div class="video__pre js-modal-splashscreen">
-    <div class="boxpad--lg text--center theme--dark">
-      <div class="sennheiser-logo"></div>
-      <div class="space--lg"></div>
-      <div class="h h--md">Use headphones to experience Germany in full 3D audio</div>
-      <div class="space--lg"></div>
-      <div class="btn btn--outline">I'm ready</div>
+    <iframe id="se-wirewax" style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://embedder.wirewax.com/{{modal.video-id}}/" frameborder="0" scrolling="yes" allowfullscreen allow="autoplay" muted="false"></iframe>
+
+    <div class="video__overlay video__overlay--center js-modal-splashscreen">
+      <div class="boxpad--lg text--center theme--dark">
+        <div class="sennheiser-logo"></div>
+        <div class="space--lg"></div>
+        <div class="h h--md">Use headphones to experience Germany in full 3D audio</div>
+        <div class="space--lg"></div>
+        <div class="btn btn--outline">I'm ready</div>
+      </div>
     </div>
-  </div>
 
-  <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-    <iframe id="wirewax-player" style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://embedder.wirewax.com/{{modal.video-id}}/" frameborder="0" scrolling="yes" allowfullscreen allow="autoplay" muted="false"></iframe>
-  </div>
+    {% if modal.pois %}
+      <div class="video__overlay video__overlay--hidden video__overlay--black-bg js-video-endscreen ">
+        <div class="width width--xxxl boxpad--lg">
+            <div class="row row--xxl-6-6 row--gutters-lg">
+              {% for poi in modal.pois %}
+                <div class="col">
+                  <div class="poi-card">
+                    <div class="poi-card__image">
+                      <div class="img img--1-1" style="background-image: url('{{site.img}}/pages/{{page.id}}/video-poi/{{poi.id}}.jpg');"></div>
+                    </div>
+                    <div class="poi-card__text">
+                      <div>
+                        <div class="h h--xxs">{{poi.title}}</div>
+                        <div class="poi-card__p">{{poi.description}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+        </div>
+      </div>
+    {% endif %}
 
+  </div>
 </div>
