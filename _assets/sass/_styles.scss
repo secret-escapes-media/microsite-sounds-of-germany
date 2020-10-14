@@ -115,16 +115,6 @@
     flex-shrink: 0;
     z-index: $z-modal-layer-1;
     width: 33.33%;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: $z-modal-layer-2;
-      background-color: rgba($black,.0175);
-    }
   }
   &__text {
     display: flex;
