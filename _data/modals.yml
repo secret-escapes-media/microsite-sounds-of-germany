@@ -62,30 +62,36 @@
     - id: dusseldorf
   video-id: 8188132
   pois:
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: wehrhahn-linie
+      title: Wehrhahn-Linie
+      description: Art runs deep in Düsseldorf. As you travel on the underground, don’t miss the futuristic art installations along the Wehrhahn line.
+    - id: carlsplatz
+      title: Carlsplatz
+      description: Looking for a bite? Don’t miss Carlsplatz, where the region’s foodies offer a delicious taste of local bites and lip-smacking street food.
+    - id: kunstsammlung-nrw-k21-standehaus
+      title: K21 Ständehaus
+      description: This sleek gallery is the city’s home of modern art. With its remarkable interior, K21 is a fitting home for remarkable installations and artworks.
+    - id: ko-bogen-ii
+      title: Kö-Bogen II
+      description: Kö-Bogen is a space where you are close to nature, yet every bit in the heart of the city. Don’t miss the hedge-topped market hall.
+    - id: konigsallee
+      title: Königsallee
+      description: This famed boulevard, with its dissecting waterway and beech-lined streets, is your go-to for renowned high-end, boutique shopping.
+    - id: little-tokyo
+      title: Little Tokyo
+      description: Little Tokyo is perfect for a dose of far-east culture, with ramen joints, sushi restaurants, bookshops and saki bars ready to welcome you in.
+    - id: fortuna-budchen
+      title: Fortuna-Büdchen
+      description: This little shop is a cult rite-of-passage for locals, from footie fans stopping for a pre-match tipple to lovers catching a riverside sunset.
+    - id: tonhalle
+      title: Tonhalle
+      description: Once a planetarium, catch the stars under the iconic domed roof of the Tonhalle. From jazz to chanson, this is the musical heart of Düsseldorf.
+    - id: craft-breweries
+      title: Craft Breweries
+      description: Düsseldorf is the home of Altbier - delight at the darker brew at a variety of old-world breweries and tap houses around the Old Town.
+    - id: asphalt-festival
+      title: Asphalt Festival
+      description: For 11 days of the year, Düsseldorf sees a festival of the arts bounce along its streets, with artists of national and international renown.
 
 - id: video-leipzig
   type: wirewax
@@ -93,30 +99,27 @@
     - id: leipzig
   video-id: 8188133
   pois:
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: gewandhaus-concert-hall
+      title: Gewandhaus Concert Hall
+      description: The internationally renowned Gewandhaus Concert Hall is a tour-de-force of unmissable orchestral performances.
+    - id: leipzig-opera
+      title: Leipzig Opera
+      description: One of the oldest concert halls in Europe, an evening at the Leipzig Opera delights with orchestra and troupes of international renown.
+    - id: madler-passage
+      title: Mädler Passage
+      description: This historic shopping arcade dates back to 1912, with a rather unrestrained opulence for a truly magical boutique shopping experience.
+    - id: st-thomas-church
+      title: St. Thomas Church
+      description: The ethereal church of St. Thomas captures over 800 years of history, with a remarkable Bach connection to discover.
+    - id: bach-museum
+      title: Bach Museum
+      description: Bach’s legacy is explored at this incredible museum, where an archive of treasures - not missing a casket of relics - awaits discovery.
+    - id: mendelssohn-house
+      title: Mendelssohn House
+      description: Mendelssohn’s last home pays tribute to the renowned composer with interactive exhibitions and more
+    - id: karl-heine-strasse
+      title: Karl-Heine-Straße
+      description: This buzzing area is packed with trendy bars and cultural hubs, a reinvention of the old industrial area into a cool, arty hangout.
 
 - id: video-berlin
   type: wirewax
@@ -124,30 +127,30 @@
     - id: berlin
   video-id: 8188131
   pois:
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
-    - id: lorem
-      title: Lorem ipsum dolor
-      description: Lorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum dolor sit amet consectetur adipisicing elit at commodiLorem ipsum
+    - id: gleisdreieck-station
+      title: Gleisdreieck
+      description: A hulking industrial marvel, Gleisdreiek station marks the site of the eponymous and popular park, where heritage meets greenery.
+    - id: german-technical-museum
+      title: Technik Museum
+      description: The Berlin Technik Museum, with its iconic mid-flight bomber adorning the roof, is filled with trains, planes, hands-on exhibits and more.
+    - id: broadcasting-house-berlin
+      title: Haus des Rundfunks
+      description: Once the transmitter of radio and tv across the country, this modernist marvel is now a breathtaking venue for concerts and recordings.
+    - id: berlin-radio-tower
+      title: Funkturm
+      description: Overshadowed by the east’s tower, this vast radio transmitter now offers even more to visitors, with irresistible views and even a restaurant in the sky.
+    - id: aeg-turbine-factory
+      title: AEG Turbinenhalle
+      description: This vast glass and steel edifice is a monument to turn-of-the-century modernism, the first example of a new wave of industrial architecture.
+    - id: kultur-brauerei-berlin
+      title: Kulturbrauerei
+      description: Now the smell of hops has faded, this old red-brick brewery hosts a cinema, clubs, a museum and restaurants.
+    - id: e-werk
+      title: Ewerk
+      description: A landmark industrial-modern venue, Ewerk has been repurposed as an events space with remarkable interiors.
+    - id: kraftwerk-klingenberg
+      title: Klingenberg
+      description: The vast, red-brick edifice of this landmark power station is a sight to behold. A lasting monument to Berlin's industrial heritage.
 
 - id: sennheiser
   image: sennheiser.jpg
