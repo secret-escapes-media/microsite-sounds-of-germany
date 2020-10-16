@@ -21,19 +21,35 @@
 
 
 
-- id: video
-  type: youtube
-  pages:
-    - id: all
-  youtube-id: wHrDlDaFya4
-
-
-
 - id: overview-video
   type: wirewax
   pages:
     - id: all
   video-id: 8187937
+
+- id: berlin-video
+  type: wirewax
+  pages:
+    - id: all
+  video-id: 8188243
+
+- id: stuttgart-video
+  type: wirewax
+  pages:
+    - id: all
+  video-id: 8188245
+
+- id: dusseldorf-video
+  type: wirewax
+  pages:
+    - id: all
+  video-id: 8188244
+
+- id: leipzig-video
+  type: wirewax
+  pages:
+    - id: all
+  video-id: 8188242
 
 
 

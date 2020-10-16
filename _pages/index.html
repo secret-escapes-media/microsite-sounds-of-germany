@@ -6,7 +6,6 @@ nav-order: 1
 title: Overview
 
 banner:
-  video-url: http://m-stg.secretescapes.com/uk/2019/lexus-design-collection/uk/_assets/video/video.mp4
   title: Sounds of Germany
   content: >
     <p class="p--xxxl text--bold">Turn up the volume and discover this unique, diverse and welcoming country for yourself</p>
@@ -45,7 +44,7 @@ intro: >
           <a href="{{site.baseurl}}{{citypage.url}}" class="img__link"></a>
           <div class="img__content">
             <div class="boxpad--sm theme--dark">
-              <h2 class="h h--xl">{{citypage.title}}</h2>
+              <h2 class="h h--lg">{{citypage.title}}</h2>
               <div class="space--sm"></div>
               <hr class="hr--center hr--no-margin">
               <p class="text--bold p--xl">{{citypage.overview-intro}}</p>
@@ -68,11 +67,11 @@ intro: >
     {% for germanypage in germanypage %}
     {% assign imageid = germanypage.id | append: '-banner' %}
     {% assign image = site.data.images | where: 'id', imageid %}
-    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{image[0].src}})">
+    <div class="img img--3-4 img--lg-1-1 img--xl-21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{image[0].src}})">
       <a href="{{site.baseurl}}/germany" class="img__link"></a>
       <div class="img__content">
         <div class="boxpad--md">
-          <div class="h h--xl">{{germanypage.overview.title}}</div>
+          <div class="h h--lg">{{germanypage.overview.title}}</div>
           <p class="text--bold p--xl">{{germanypage.overview.intro}}</p>
           <div class="space--md"></div>
           <a href="{{site.baseurl}}{{germanypage.url}}" class="btn">Discover now</a>
