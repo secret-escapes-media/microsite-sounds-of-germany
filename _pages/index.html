@@ -63,28 +63,7 @@ intro: >
 
     <div class="space--lg"></div>
     <!-- Germany page -->
-    {% assign germanypage = site.html_pages | where: 'id', 'germany' %}
-    {% for germanypage in germanypage %}
-    {% assign imageid = germanypage.id | append: '-banner' %}
-    {% assign image = site.data.images | where: 'id', imageid %}
-    <div class="img img--3-4 img--lg-1-1 img--xl-21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{image[0].src}})">
-      <a href="{{site.baseurl}}/germany" class="img__link"></a>
-      <div class="img__content">
-        <div class="boxpad--md">
-          <div class="h h--lg">{{germanypage.overview.title}}</div>
-          <p class="text--bold p--xl">{{germanypage.overview.intro}}</p>
-          <div class="space--md"></div>
-          <a href="{{site.baseurl}}{{germanypage.url}}" class="btn">Discover now</a>
-        </div>
-      </div>
-      <div class="img__overlay"></div>
-      {% if image[0].copyright %}
-      <div class="img__copyright">
-        {% include components/copyright.html %}
-      </div>
-      {% endif %}
-    </div>
-    {% endfor %}
+    {% include page/promo-germany.html%}
   </div>
 </div>
 

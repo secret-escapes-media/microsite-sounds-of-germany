@@ -1,6 +1,6 @@
 
-- id: germany-banner
-  src: germany/banner.jpg
+- id: germany-in-full-sound-banner
+  src: germany-in-full-sound/banner.jpg
   copyright:
 
 - id: dusseldorf-banner
@@ -47,51 +47,51 @@
 ######### GERMANY POIS
 
 - id: drachenburg-castle
-  src: germany/poi/drachenburg-castle.jpg
+  src: germany-in-full-sound/poi/drachenburg-castle.jpg
   copyright: "Getty Images william87"
 
 - id: dresden
-  src: germany/poi/dresden.jpg
+  src: germany-in-full-sound/poi/dresden.jpg
   copyright: "DZT_Andreas Antoni"
 
 - id: frankfurt
-  src: germany/poi/frankfurt.jpg
+  src: germany-in-full-sound/poi/frankfurt.jpg
   copyright: "DZT_Francesco Carovillano"
 
 - id: hamburg
-  src: germany/poi/hamburg.jpg
+  src: germany-in-full-sound/poi/hamburg.jpg
   copyright: "fotolia powell83"
 
 - id: harz-mountains-national-park
-  src: germany/poi/harz-mountains-national-park.jpg
+  src: germany-in-full-sound/poi/harz-mountains-national-park.jpg
   copyright: "DZT_Francesco Carovillano"
 
 - id: lake-constance
-  src: germany/poi/lake-constance.jpg
+  src: germany-in-full-sound/poi/lake-constance.jpg
   copyright:
 
 - id: northern-friesland
-  src: germany/poi/northern-friesland.jpg
+  src: germany-in-full-sound/poi/northern-friesland.jpg
   copyright:
 
 - id: partnach-gorge
-  src: germany/poi/partnach-gorge.jpg
+  src: germany-in-full-sound/poi/partnach-gorge.jpg
   copyright: "DZT_Oscar Dominguez"
 
 - id: saxon-switzerland
-  src: germany/poi/saxon-switzerland.jpg
+  src: germany-in-full-sound/poi/saxon-switzerland.jpg
   copyright: "DZT_Francois Thierens"
 
 - id: spree-forest
-  src: germany/poi/spree-forest.jpg
+  src: germany-in-full-sound/poi/spree-forest.jpg
   copyright: "Marcin Nowak_Anna Nowak"
 
 - id: steinhuder-sea
-  src: germany/poi/steinhuder-sea.jpg
+  src: germany-in-full-sound/poi/steinhuder-sea.jpg
   copyright: "Naturpark Steinhuder Meer_Bernd Wolter"
 
 - id: zugspitze
-  src: germany/poi/zugspitze.jpg
+  src: germany-in-full-sound/poi/zugspitze.jpg
   copyright: "DZT"
 
 ###############################################################
