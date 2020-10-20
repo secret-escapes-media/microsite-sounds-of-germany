@@ -63,7 +63,7 @@ $nav-height-sm:  104px;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     &:before,
     &:after {
       content: "";
@@ -87,7 +87,7 @@ $nav-height-sm:  104px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 1;
     width: 100%;
     min-height: 100%;
     &:before {
@@ -141,6 +141,10 @@ $nav-height-sm:  104px;
 }
 
 
+
+
+
+
 .soundwave {
   display: flex;
   flex-direction: row;
@@ -159,17 +163,17 @@ $nav-height-sm:  104px;
   &__path {
     fill: none;
     stroke: $white;
-    stroke-width: 2;
+    stroke-width: 2px;
     stroke-miterlimit: 10;
     stroke-linecap: round;
     stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
     &-fill {
-      stroke-width: 0;
+      stroke-width: 0px;
       fill: $white;
     }
     &-thick {
-      stroke-width: 4;
+      stroke-width: 4px;
     }
   }
 
@@ -227,8 +231,8 @@ $nav-height-sm:  104px;
     z-index: 10;
     position: absolute;
     height: auto;
-    bottom: 0;
-    top: 0;
+    bottom: 0; top: 0;
+    left: 0; right: 0;
   }
   &--overview &__center {
     width: 100%;

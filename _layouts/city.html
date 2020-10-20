@@ -120,7 +120,7 @@ layout: page
   {% for nextpage in citypages %}
   {% if nextpage.layout == 'city' %}
   <div class="container">
-    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{nextpage.id}}/banner.jpg);">
+    <div class="img img--3-4 img--lg-1-1 img--xl-21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/{{nextpage.id}}/banner.jpg);">
       <a href="{{site.baseurl}}{{nextpage.url}}" class="img__link"></a>
       <div class="img__content">
         <div class="boxpad--md">
@@ -137,19 +137,7 @@ layout: page
   {% else %}
   <!-- No more city pages, link to Germany page -->
   <div class="container">
-    <div class="img img--21-9 rounded--md depth--md theme--dark text--center" style="background-image: url({{site.img}}/pages/germany/banner.jpg);">
-      <a href="{{site.baseurl}}/germany" class="img__link"></a>
-      <div class="img__content">
-        <div class="boxpad--md">
-          <div class="p--xxl text--smallcaps">Continue your adventure, discover</div>
-          <div class="space--xxs"></div>
-          <div class="h h--xl">Germany in Full Sound</div>
-          <div class="space--sm"></div>
-          <a href="{{site.baseurl}}/germany" class="btn">Discover now</a>
-        </div>
-      </div>
-      <div class="img__overlay"></div>
-    </div>
+    {% include page/promo-germany.html%}
   </div>
   {% endif %}
   {% endfor %}

@@ -5,9 +5,9 @@ $core-nav-height-sm:  60px;
 $core-nav-padding:    1.44rem;
 $core-nav-padding-sm: 1rem;
 // the breakpoint for the core nav list to appear as the mobile nav
-$nav-list-bp: 870px;
+$nav-list-bp: 960px;
 // the breakpoint for the logo to appear at the bottom of the mobile nav
-$logo-bp: 600px;
+$logo-bp: 720px;
 
 // global core nav height with breakpoint
 @mixin core-nav-height {

@@ -33,6 +33,16 @@
   }
 }
 
+.h--competition {
+  font-size: $s5;
+  @include bp($lg){
+    font-size: $s6;
+  }
+  @include bp($xxxl){
+    font-size: $s8;
+  }
+}
+
 .h--sub {
   // custom content headline
   font-family: $sans;

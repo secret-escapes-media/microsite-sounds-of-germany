@@ -1,6 +1,6 @@
 ---
 layout: page
-id: germany
+id: germany-in-full-sound
 nav-title: Germany
 nav: true
 nav-order: 2
@@ -36,7 +36,7 @@ sections:
     pois:
       - id: hamburg
         title: Hamburg
-        content: The Inner and Outer Alster Lakes are a central part of Hamburg city life. Whenever the sun is out, they fill up with sailors, paddlers and rowers. Hamburg boasts a wide variety of museums, from modern art and German romanticism to ethnology and maritime history. Hamburg is also known as a musical hub, thanks to the Beatles who performed for the very first time as a new group in the St. Pauli district. After a day of hungry exploring, feed-up in Hamburg’s cultural hotspots, Sternschanze and Karoviertel, which have everything a foodie's heart could desire. For those who still have energy to burn, you can explore the magnificent port which never sleeps. 
+        content: The Inner and Outer Alster Lakes are a central part of Hamburg city life. Whenever the sun is out, they fill up with sailors, paddlers and rowers. Hamburg boasts a wide variety of museums, from modern art and German romanticism to ethnology and maritime history. Hamburg is also known as a musical hub, thanks to the Beatles who performed for the very first time as a new group in the St. Pauli district. After a day of hungry exploring, feed-up in Hamburg’s cultural hotspots, Sternschanze and Karoviertel, which have everything a foodie's heart could desire. For those who still have energy to burn, you can explore the magnificent port which never sleeps.
       - id: dresden
         title: Dresden
         content: Dresden offers attractions in great variety, most notably artistic treasures, architectural sights and a charming landscape. From the Old Town with its Renaissance and Baroque buildings, including Dresden Frauenkirche (Church of Our Lady), a magnificent domed Baroque church which dominates the Dresden skyline, to the Semper Opera House which  houses the Saxon State Orchestra, one of the world’s oldest orchestras. Take a tranquil stroll along the magnificent promenades on the bank of the Elbe River, meander through the interesting museums, gaze at the  industrial monuments, and immerse yourself in the charming details; a trip to Dresden never disappoints.
@@ -83,35 +83,33 @@ sections:
 
 {% for section in page.sections %}
 <div class="bg--white bg--img-fixed vpad--xxxl" style="background-image: url({{site.img}}/pages/{{page.id}}/bg-{{section.id}}.jpg);">
-  <div class="container container--xxl container--no-padding">
-    <div class="bg--white rounded--md depth--lg">
+  <div class="container">
+    <div class="container container--xxl container--no-padding">
+      <div class="bg--white rounded--md depth--lg">
 
-      <div class="boxpad--lg bg--black theme--dark text--center">
-        <div class="h h--lg h--display">{{section.title}}</div>
-        <p>{{section.intro}}</p>
-      </div>
+        <div class="boxpad--lg bg--black theme--dark text--center">
+          <div class="h h--lg h--display">{{section.title}}</div>
+          <p>{{section.intro}}</p>
+        </div>
 
-      {% for poi in section.pois %}
-        {% assign image = site.data.images | where: 'id', poi.id %}
-        <div class="harvey bg--white{% cycle '',' harvey--swap'%}">
-          <div class="harvey__img">
-            <div class="img img--1-1" style="background-image: url({{site.img}}/pages/{{image[0].src}});">
+        {% for poi in section.pois %}
+          {% assign image = site.data.images | where: 'id', poi.id %}
+          <div class="harvey bg--white{% cycle '',' harvey--swap'%}">
+            <div class="harvey__img" style="background-image: url({{site.img}}/pages/{{image[0].src}});">
               {% if image[0].copyright %}
               <div class="img__copyright">
                 {% include components/copyright.html %}
               </div>
               {% endif %}
             </div>
-          </div>
-          <div class="harvey__text">
-            <div class="boxpad--sm">
+            <div class="harvey__text">
               <div class="h h--xs h--sans">{{poi.title}}</div>
               <p class="p--lg">{{poi.content}}</p>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
 
+      </div>
     </div>
   </div>
 </div>
