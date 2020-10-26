@@ -10,6 +10,7 @@ if ($('#se-wirewax').length != 0) {
 function modalSplashFade(){
   $('.js-modal-splashscreen').fadeOut();
   window.wirewax.triggerEvent(window.wirewax.events.triggers.PLAY);
+  window.wirewax.triggerEvent(window.wirewax.events.triggers.UNMUTE_VOLUME);
 };
 $('.js-modal-splashscreen').click(function(){
   modalSplashFade();
