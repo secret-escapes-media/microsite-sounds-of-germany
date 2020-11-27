@@ -21,7 +21,7 @@ $nav-color:          $black;
 .site-nav {
   position: absolute;
   top: $core-nav-height-sm; left: 0; right: 0;
-  z-index: $z-overlay-upper;
+  z-index: $z-nav;
   background-color: rgba($nav-color,.8);
   text-align: center;
   @include bp($md){
@@ -115,6 +115,6 @@ $nav-color:          $black;
     left: 0;
     right: 0;
     bottom: auto;
-    z-index: $z-nav  ;
+    z-index: $z-nav;
   }
 }
