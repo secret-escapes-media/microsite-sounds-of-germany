@@ -45,13 +45,18 @@ layout: page
 
 {% assign imageid = page.id | append: '-mid-banner' %}
 {% assign image = site.data.images | where: 'id', imageid %}
-<div class="vpad--xxxxl bg--img-fixed mid-banner" style="background-image: url({{site.img}}/pages/{{image[0].src}});">
-  <div class="space--xxxxl"></div>
-  {% if image[0].copyright %}
-  <div class="mid-banner__copyright">
-    {% include components/copyright.html %}
+<div class="vpad--xxxxl bg__fixed mid-banner">
+  <div class="bg__fixed-wrap">
+    <div class="bg__fixed-img" style="background-image: url({{site.img}}/pages/{{image[0].src}});"></div>
   </div>
-  {% endif %}
+  <div>
+    <div class="space--xxxxl"></div>
+    {% if image[0].copyright %}
+    <div class="mid-banner__copyright">
+      {% include components/copyright.html %}
+    </div>
+    {% endif %}
+  </div>
 </div>
 
 <div class="vpad--xxl">

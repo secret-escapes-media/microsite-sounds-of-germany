@@ -82,7 +82,10 @@ sections:
 </div>
 
 {% for section in page.sections %}
-<div class="bg--white bg--img-fixed vpad--xxxl" style="background-image: url({{site.img}}/pages/{{page.id}}/bg-{{section.id}}.jpg);">
+<div class="bg__fixed vpad--xxxl">
+  <div class="bg__fixed-wrap">
+    <div class="bg__fixed-img" style="background-image: url({{site.img}}/pages/{{page.id}}/bg-{{section.id}}.jpg);"></div>
+  </div>
   <div class="container">
     <div class="container container--xxl container--no-padding">
       <div class="bg--white rounded--md depth--lg">

@@ -135,9 +135,12 @@ competition-form:
 </div>
 <div class="space--xxl"></div>
 
-<div id="entry-form" class="vpad--xxxl bg--img-fixed" style="background-image: url({{site.img}}/pages/competition/banner.jpg);">
-
-  <div class="container container--lg boxpad--xl bg--white rounded--md depth--xl">
+<div id="entry-form" class="vpad--xxxl bg__fixed">
+  <div class="bg__fixed-wrap">
+    <div class="bg__fixed-img" style="background-image: url({{site.img}}/pages/competition/banner.jpg);"></div>
+  </div>
+  <div class="container container--lg">
+    <div class="boxpad--lg bg--white rounded--md depth--xl">
     {% assign form = page.competition-form %}
     <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
       {% include form/messages.html %}
@@ -166,6 +169,7 @@ competition-form:
         <button type="submit" class="btn" disabled>{{form.submit}}</button>
       </div>
     </form>
+    </div>
   </div>
 </div>
 
