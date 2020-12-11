@@ -16,8 +16,8 @@ var formFunctions = (function functionName(form) {
       // add classes
       container.className = 'message message--' + form.statusMessages[i].id;
       wrap.className = 'width width--lg';
-      title.className = 'title title--md';
-      description.className = 'text--xl text--normal';
+      title.className = 'h h--md';
+      description.className = 'p--xl';
       // add content
       title.textContent = form.statusMessages[i].title;
       description.textContent = form.statusMessages[i].description;
